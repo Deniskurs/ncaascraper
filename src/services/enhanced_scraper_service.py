@@ -30,6 +30,7 @@ class EnhancedScraperService:
         self.vision_enabled = False  # Vision is disabled by default
         self.vision_model = vision_model  # Model to use for vision verification
         self.active_learning = None  # Active learning component (optional)
+        self.auth_handler = None  # Will be set when verify_login_before_scraping is called
         
         # Initialize URL validator
         self.url_validator = URLValidator(logger)
@@ -38,6 +39,93 @@ class EnhancedScraperService:
         self.screenshot_dir = os.path.join("data", "screenshots")
         if not os.path.exists(self.screenshot_dir):
             os.makedirs(self.screenshot_dir)
+    
+    def verify_login_before_scraping(self, auth_handler, platforms=None):
+        """
+        Verify login status before starting scraping and retry if necessary.
+        
+        Args:
+            auth_handler: SocialMediaAuth instance
+            platforms: List of platforms to verify login for
+            
+        Returns:
+            Boolean indicating if all platforms are logged in
+        """
+        if platforms is None:
+            platforms = ['twitter', 'facebook', 'instagram']
+        
+        self.auth_handler = auth_handler
+        
+        # Check login status for each platform
+        all_logged_in = True
+        for platform in platforms:
+            if not auth_handler._check_login_status(platform, extended_check=True):
+                self.logger.warning(f"Not logged in to {platform} before scraping, attempting login")
+                all_logged_in = False
+                
+                # Navigate to platform homepage to check cookie consent
+                if platform == 'twitter':
+                    self.driver.get("https://twitter.com/")
+                elif platform == 'facebook':
+                    self.driver.get("https://www.facebook.com/")
+                elif platform == 'instagram':
+                    self.driver.get("https://www.instagram.com/")
+                    
+                # Handle cookie consent
+                auth_handler.handle_cookie_consent(platform)
+                
+                # Attempt login
+                success = False
+                if platform == 'twitter':
+                    success, _ = auth_handler.login_twitter()
+                elif platform == 'facebook':
+                    success, _ = auth_handler.login_facebook()
+                elif platform == 'instagram':
+                    success, _ = auth_handler.login_instagram()
+                    
+                if not success:
+                    self.logger.error(f"Failed to login to {platform} before scraping")
+                    return False
+        
+        return all_logged_in
+    
+    def verify_login_during_scraping(self, platform):
+        """
+        Verify login status during scraping and attempt to re-login if necessary.
+        
+        Args:
+            platform: The platform to verify login for
+            
+        Returns:
+            Boolean indicating if login was successful
+        """
+        if not self.auth_handler:
+            self.logger.warning("No auth handler available for login verification")
+            return False
+            
+        # Check if we're still logged in
+        if self.auth_handler._check_login_status(platform):
+            return True
+            
+        self.logger.warning(f"Session expired for {platform} during scraping, attempting to re-login")
+        
+        # Handle cookie consent
+        self.auth_handler.handle_cookie_consent(platform)
+        
+        # Attempt login
+        success = False
+        if platform == 'twitter':
+            success, _ = self.auth_handler.login_twitter()
+        elif platform == 'facebook':
+            success, _ = self.auth_handler.login_facebook()
+        elif platform == 'instagram':
+            success, _ = self.auth_handler.login_instagram()
+            
+        if not success:
+            self.logger.error(f"Failed to re-login to {platform} during scraping")
+            return False
+            
+        return True
     
     def get_profile_info(self, first_name: str, last_name: str, context: Dict[str, Any] = None) -> Dict[str, Optional[str]]:
         """Retrieve profile info using enhanced AI-driven search and verification."""
@@ -79,6 +167,10 @@ class EnhancedScraperService:
             "facebook.com": "facebook",
             "instagram.com": "instagram"
         }
+        
+        # Ensure we're logged in to all platforms before starting
+        if self.auth_handler:
+            self.verify_login_before_scraping(self.auth_handler, list(platforms.values()))
         
         # Use enhanced AI-driven search if available
         if self.ai_verifier:
@@ -1016,8 +1108,26 @@ class EnhancedScraperService:
         self.logger.info(f"Fetching profile content: {url}")
         
         try:
+            # Determine platform from URL
+            platform = None
+            if 'twitter.com' in url.lower():
+                platform = 'twitter'
+            elif 'facebook.com' in url.lower():
+                platform = 'facebook'
+            elif 'instagram.com' in url.lower():
+                platform = 'instagram'
+            
             # Navigate to the URL
             self.driver.get(url)
+            
+            # Handle cookie consent if needed
+            if platform and self.auth_handler:
+                self.auth_handler.handle_cookie_consent(platform)
+            
+            # Verify login status if needed
+            if platform and self.auth_handler:
+                if not self.verify_login_during_scraping(platform):
+                    self.logger.warning(f"Could not verify login for {platform}, content may be limited")
             
             # Wait for page to load
             WebDriverWait(self.driver, 10).until(

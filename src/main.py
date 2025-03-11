@@ -153,6 +153,16 @@ def main():
         # Set active learning component
         scraper.active_learning = active_learning
         
+        # Verify login status before starting scraping
+        print("Verifying login status before starting scraping...")
+        login_verified = scraper.verify_login_before_scraping(social_auth)
+        if not login_verified:
+            logger.warning("Login verification failed for one or more platforms. Scraping may be limited.")
+            print("⚠️ Login verification failed for one or more platforms. Scraping may be limited.")
+        else:
+            logger.info("Login verification successful for all platforms.")
+            print("✓ Login verification successful for all platforms.")
+        
         # Create profile verifier with AI integration if enabled
         profile_verifier = ProfileVerifier(
             max_workers=3,

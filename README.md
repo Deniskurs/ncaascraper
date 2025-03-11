@@ -1,17 +1,18 @@
-# NCAA Athlete Social Media Scraper
+# NCAA Athlete Contact Information Scraper
 
-A sophisticated tool for identifying and verifying social media profiles and contact information for NCAA athletes with high accuracy.
+A sophisticated tool for identifying and verifying social media profiles, email addresses, and phone numbers for NCAA athletes with high accuracy.
 
 ## Features
 
-- Searches for athletes' social media profiles (Twitter, Facebook, Instagram)
-- Finds contact information (email, phone)
-- Verifies profile authenticity using multiple verification signals
-- Enhanced AI-powered verification to ensure correct athlete identification
-- Active learning system that improves accuracy over time
-- Optional vision-based verification for social media profiles
-- **Social media authentication** to access restricted content
-- **Enhanced URL validation** to filter out generic pages and invalid PHP endpoints
+- **Comprehensive Contact Discovery**: Finds social media profiles (Twitter, Facebook, Instagram), email addresses, and phone numbers
+- **Multi-Platform Authentication**: Robust login system for accessing restricted content on social media platforms
+- **Cookie Consent Handling**: Automatically manages cookie consent dialogs across different platforms
+- **Session Persistence**: Maintains login sessions throughout the scraping process with automatic re-login
+- **Profile Verification**: Uses multiple verification signals to ensure correct athlete identification
+- **AI-Powered Analysis**: Enhanced verification using OpenAI models for accurate profile matching
+- **Active Learning**: Self-improving system that gets more accurate over time
+- **Vision Verification**: Optional image-based verification of social media profiles
+- **Enhanced URL Validation**: Filters out generic pages and invalid endpoints
 
 ## Installation
 
@@ -37,10 +38,20 @@ A sophisticated tool for identifying and verifying social media profiles and con
 
 4. Set up environment variables:
 
-   Create a `.env` file in the project root with your OpenAI API key:
+   Create a `.env` file in the project root with your API keys and social media credentials:
 
    ```
+   # API Keys
    OPENAI_API_KEY=your_openai_api_key_here
+
+   # Social Media Credentials (required for authentication)
+   FACEBOOK_EMAIL=your_facebook_email
+   FACEBOOK_PASSWORD=your_facebook_password
+   INSTAGRAM_USERNAME=your_instagram_username
+   INSTAGRAM_PASSWORD=your_instagram_password
+   TWITTER_EMAIL=your_twitter_email
+   TWITTER_USERNAME=your_twitter_username
+   TWITTER_PASSWORD=your_twitter_password
    ```
 
 ## Usage
@@ -131,50 +142,42 @@ Optional additional columns that improve accuracy:
 
 ## How It Works
 
-### Social Media Authentication
+### Social Media Authentication System
 
-The social media authentication feature:
+The enhanced social media authentication system:
 
-1. Automatically logs into Twitter, Facebook, and Instagram before scraping
-2. Uses credentials stored in the `.env` file
-3. Maintains session persistence throughout the scraping process
-4. Enables access to restricted content that requires authentication
-5. Captures screenshots for debugging authentication issues
+1. **Robust Login Flow**: Automatically logs into Twitter, Facebook, and Instagram with comprehensive error handling
+2. **Cookie Consent Management**: Intelligently handles various cookie consent dialogs across platforms
+3. **Session Verification**: Verifies login status before and during scraping to ensure continuous access
+4. **Auto Re-login**: Detects when sessions expire and automatically re-authenticates
+5. **Extended Verification**: Uses multiple signals to confirm successful authentication
+6. **Debugging Support**: Captures screenshots for troubleshooting authentication issues
 
-To set up social media authentication, add the following to your `.env` file:
-
-```
-# Social Media Credentials
-FACEBOOK_EMAIL=your_facebook_email
-FACEBOOK_PASSWORD=your_facebook_password
-INSTAGRAM_USERNAME=your_instagram_username
-INSTAGRAM_PASSWORD=your_instagram_password
-TWITTER_EMAIL=your_twitter_email
-TWITTER_USERNAME=your_twitter_username
-TWITTER_PASSWORD=your_twitter_password
-```
+This system ensures reliable access to restricted content, improving the quality and quantity of data collected.
 
 ### Enhanced URL Validation
 
 The URL validation system:
 
 1. Filters out generic social media pages that aren't athlete profiles
-2. Validates PHP endpoints to ensure they're actual profile pages
+2. Validates endpoints to ensure they're actual profile pages
 3. Uses platform-specific patterns to identify genuine profiles
 4. Analyzes URL content to detect athlete-related indicators
 5. Improves accuracy by reducing false positives from generic pages
+6. Performs real-time validation during the scraping process
 
 ### AI-Enhanced Verification
 
 The AI verification feature uses OpenAI's models to:
 
 1. Generate optimized search queries based on athlete information
-2. Analyze search results to identify potential profiles
+2. Analyze search results to identify potential profiles and contact information
 3. Verify profiles through multi-stage verification:
    - NCAA status determination (Is this an NCAA player at all?)
    - Specific athlete matching (Is this the correct NCAA player?)
    - Disqualifying evidence check (Is there anything that rules this out?)
-4. Provide detailed reasoning and confidence scores
+   - Contact information validation (Is this email/phone likely to belong to the athlete?)
+4. Provide detailed reasoning and confidence scores for each match
 
 ### Active Learning
 
@@ -207,12 +210,61 @@ When enabled, the vision verification feature:
 - **Set up social media authentication** to access restricted profiles and improve results
 - Use a dedicated social media account for scraping to avoid account restrictions
 
+## Project Architecture
+
+The project is organized into several key components:
+
+```
+ncaascraper/
+├── src/
+│   ├── main.py                  # Main entry point
+│   ├── requirements.txt         # Dependencies
+│   ├── components/              # Core components
+│   │   ├── ai_verifier.py       # AI verification logic
+│   │   ├── active_learning.py   # Learning system
+│   │   └── profile_verifier.py  # Profile verification
+│   ├── services/                # Service layer
+│   │   ├── scraper_service.py   # Basic scraper
+│   │   └── enhanced_scraper_service.py  # AI-enhanced scraper
+│   └── utils/                   # Utilities
+│       ├── driver.py            # Browser automation
+│       ├── social_media_auth.py # Authentication system
+│       ├── url_validator.py     # URL validation
+│       └── logger.py            # Logging system
+├── data/                        # Data storage
+│   ├── input/                   # Input files
+│   ├── output/                  # Results
+│   ├── logs/                    # Log files
+│   ├── screenshots/             # Profile screenshots
+│   ├── cache/                   # Cache storage
+│   └── chrome_data/             # Browser session data
+└── .env                         # Environment variables
+```
+
 ## Troubleshooting
 
+### Authentication Issues
+
+- If social media authentication fails, check your credentials in the `.env` file
+- For cookie consent issues, try running with a fresh Chrome profile by deleting the `data/chrome_data` directory
+- If you see "session expired" errors, the system will attempt to re-login automatically
+- For persistent login issues, check if the platform has implemented new security measures
+
+### Performance Issues
+
 - If you encounter timeout errors, increase the `--timeout` value
+- For slow performance, ensure you have a stable internet connection
+- Consider running with fewer AI features if processing speed is critical
+
+### Data Quality Issues
+
 - Ensure your input Excel file has the required columns
 - Check that your OpenAI API key is valid and has sufficient quota
 - For vision verification issues, ensure Chrome is properly installed
-- If social media authentication fails, check your credentials in the `.env` file
-- For PHP endpoint issues, verify the URL validation is working correctly
-- If you see "session expired" errors, try clearing the Chrome data directory and restarting
+- If you're getting low-confidence matches, try enabling more verification features
+
+### Technical Issues
+
+- For URL validation problems, check the logs for specific error messages
+- If the Chrome driver fails to start, ensure you have Chrome installed and updated
+- For package dependency issues, try reinstalling with `pip install -r src/requirements.txt --force-reinstall`
