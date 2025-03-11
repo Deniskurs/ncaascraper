@@ -1,3 +1,3 @@
-2025/03/11-16:59:46.460 a703 Reusing MANIFEST /Users/denis/ncaascraper/data/chrome_data/Default/IndexedDB/https_x.com_0.indexeddb.leveldb/MANIFEST-000001
-2025/03/11-16:59:46.460 a703 Recovering log #3
-2025/03/11-16:59:46.461 a703 Reusing old log /Users/denis/ncaascraper/data/chrome_data/Default/IndexedDB/https_x.com_0.indexeddb.leveldb/000003.log 
+2025/03/11-17:06:54.790 6707 Reusing MANIFEST /Users/denis/ncaascraper/data/chrome_data/Default/IndexedDB/https_x.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/03/11-17:06:54.791 6707 Recovering log #3
+2025/03/11-17:06:54.791 6707 Reusing old log /Users/denis/ncaascraper/data/chrome_data/Default/IndexedDB/https_x.com_0.indexeddb.leveldb/000003.log 
