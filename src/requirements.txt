@@ -8,3 +8,5 @@ python-dotenv
 requests
 urllib3
 openai>=1.6.0
+pillow
+python-slugify
