@@ -10,6 +10,8 @@ A sophisticated tool for identifying and verifying social media profiles and con
 - Enhanced AI-powered verification to ensure correct athlete identification
 - Active learning system that improves accuracy over time
 - Optional vision-based verification for social media profiles
+- **Social media authentication** to access restricted content
+- **Enhanced URL validation** to filter out generic pages and invalid PHP endpoints
 
 ## Installation
 
@@ -67,6 +69,7 @@ This will:
 | `--ai-verification`    | Enable AI verification for profile matching          | False                                   |
 | `--ai-model`           | OpenAI model to use for reasoning                    | `gpt-4o`                                |
 | `--search-query-model` | OpenAI model to use for search query generation      | `gpt-4o`                                |
+| `--vision-model`       | OpenAI model to use for vision verification          | `gpt-4o`                                |
 | `--vision-enabled`     | Enable vision verification for social media profiles | False                                   |
 | `--active-learning`    | Enable active learning to improve results over time  | False                                   |
 | `--timeout`            | Timeout per athlete in seconds                       | 45                                      |
@@ -97,6 +100,12 @@ python src/main.py --ai-verification --active-learning --vision-enabled --timeou
 python src/main.py --ai-verification --ai-model gpt-4o --search-query-model gpt-4o --timeout 90
 ```
 
+#### Using Vision Verification with Custom Model
+
+```bash
+python src/main.py --ai-verification --vision-enabled --vision-model gpt-4o --timeout 60
+```
+
 #### Processing a Large Dataset
 
 ```bash
@@ -121,6 +130,39 @@ Optional additional columns that improve accuracy:
 - `State`
 
 ## How It Works
+
+### Social Media Authentication
+
+The social media authentication feature:
+
+1. Automatically logs into Twitter, Facebook, and Instagram before scraping
+2. Uses credentials stored in the `.env` file
+3. Maintains session persistence throughout the scraping process
+4. Enables access to restricted content that requires authentication
+5. Captures screenshots for debugging authentication issues
+
+To set up social media authentication, add the following to your `.env` file:
+
+```
+# Social Media Credentials
+FACEBOOK_EMAIL=your_facebook_email
+FACEBOOK_PASSWORD=your_facebook_password
+INSTAGRAM_USERNAME=your_instagram_username
+INSTAGRAM_PASSWORD=your_instagram_password
+TWITTER_EMAIL=your_twitter_email
+TWITTER_USERNAME=your_twitter_username
+TWITTER_PASSWORD=your_twitter_password
+```
+
+### Enhanced URL Validation
+
+The URL validation system:
+
+1. Filters out generic social media pages that aren't athlete profiles
+2. Validates PHP endpoints to ensure they're actual profile pages
+3. Uses platform-specific patterns to identify genuine profiles
+4. Analyzes URL content to detect athlete-related indicators
+5. Improves accuracy by reducing false positives from generic pages
 
 ### AI-Enhanced Verification
 
@@ -149,9 +191,11 @@ The active learning system:
 When enabled, the vision verification feature:
 
 1. Captures screenshots of social media profiles
-2. Uses AI vision models to analyze profile images
+2. Uses AI vision models (gpt-4o) to analyze profile images
 3. Looks for visual evidence connecting the profile to the athlete
 4. Integrates visual analysis with text-based verification
+
+> **Note**: The vision verification feature now uses the gpt-4o model, which has built-in vision capabilities, replacing the deprecated gpt-4-vision-preview model.
 
 ## Best Practices
 
@@ -160,6 +204,8 @@ When enabled, the vision verification feature:
 - Set appropriate `--timeout` values based on your dataset size
 - Store your OpenAI API key in the `.env` file rather than passing it as a command-line argument
 - For critical applications, enable `--vision-enabled` for additional verification
+- **Set up social media authentication** to access restricted profiles and improve results
+- Use a dedicated social media account for scraping to avoid account restrictions
 
 ## Troubleshooting
 
@@ -167,3 +213,6 @@ When enabled, the vision verification feature:
 - Ensure your input Excel file has the required columns
 - Check that your OpenAI API key is valid and has sufficient quota
 - For vision verification issues, ensure Chrome is properly installed
+- If social media authentication fails, check your credentials in the `.env` file
+- For PHP endpoint issues, verify the URL validation is working correctly
+- If you see "session expired" errors, try clearing the Chrome data directory and restarting

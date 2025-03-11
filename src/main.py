@@ -8,6 +8,8 @@ from datetime import datetime
 from dotenv import load_dotenv
 from utils.logger import setup_logger
 from utils.driver import setup_chrome_driver
+from utils.social_media_auth import SocialMediaAuth
+from utils.url_validator import URLValidator
 from services.enhanced_scraper_service import EnhancedScraperService
 from components.profile_verifier import ProfileVerifier
 from components.ai_verifier import AIVerifier
@@ -45,6 +47,7 @@ def main():
     parser.add_argument('--ai-verification', action='store_true', help='Enable AI verification for profile matching')
     parser.add_argument('--ai-model', default='gpt-4o', help='OpenAI model to use for reasoning (gpt-4o recommended)')
     parser.add_argument('--search-query-model', default='gpt-4o', help='OpenAI model to use for search query generation (gpt-4o recommended)')
+    parser.add_argument('--vision-model', default='gpt-4o', help='OpenAI model to use for vision verification (gpt-4o recommended)')
     parser.add_argument('--vision-enabled', action='store_true', help='Enable vision verification for social media profiles')
     parser.add_argument('--active-learning', action='store_true', help='Enable active learning to improve results over time')
     parser.add_argument('--timeout', type=int, default=45, help='Timeout per athlete in seconds')
@@ -92,8 +95,25 @@ def main():
         logger.info(f"Loaded {len(df)} athletes from {args.input}")
         print(f"Successfully loaded {len(df)} athletes")
 
-        print("Setting up Chrome driver...")
-        driver = setup_chrome_driver()
+        print("Setting up Chrome driver with session persistence...")
+        driver = setup_chrome_driver(enable_cookies=True)
+        
+        # Authenticate with social media platforms
+        print("Authenticating with social media platforms...")
+        social_auth = SocialMediaAuth(driver, logger)
+        auth_results = social_auth.authenticate_all()
+        
+        # Log authentication results
+        for platform, result in auth_results.items():
+            if result['success']:
+                logger.info(f"Successfully authenticated with {platform}")
+                print(f"✓ Successfully authenticated with {platform}")
+            else:
+                logger.warning(f"Failed to authenticate with {platform}: {result['message']}")
+                print(f"✗ Failed to authenticate with {platform}: {result['message']}")
+        
+        # Initialize URL validator
+        url_validator = URLValidator(logger)
         
         # Initialize active learning if enabled
         active_learning = None
@@ -108,8 +128,8 @@ def main():
             logger.info(f"Active learning stats: {stats}")
             print(f"Active learning stats: Total verifications: {stats['total_verifications']}, Success rate: {stats.get('success_rate', 0):.2f}")
         
-        # Initialize enhanced scraper with AI verifier
-        print("Initializing enhanced scraper with AI reasoning...")
+        # Initialize enhanced scraper with AI verifier and URL validator
+        print("Initializing enhanced scraper with AI reasoning and URL validation...")
         
         # Check if vision is enabled
         vision_enabled = args.vision_enabled
@@ -118,7 +138,14 @@ def main():
         else:
             print("Vision verification is disabled")
             
-        scraper = EnhancedScraperService(driver, logger, success_logger, ai_verifier=ai_verifier)
+        # Create the scraper with the authenticated driver and vision model
+        scraper = EnhancedScraperService(
+            driver, 
+            logger, 
+            success_logger, 
+            ai_verifier=ai_verifier,
+            vision_model=args.vision_model
+        )
         
         # Set vision enabled flag
         scraper.vision_enabled = vision_enabled

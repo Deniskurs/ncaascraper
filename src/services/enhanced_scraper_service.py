@@ -13,9 +13,11 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException, WebDriverException, NoSuchElementException
 from typing import Dict, Optional, List, Tuple, Any
+from utils.url_validator import URLValidator
+from utils.social_media_auth import SocialMediaAuth
 
 class EnhancedScraperService:
-    def __init__(self, driver, logger, success_logger, ai_verifier=None):
+    def __init__(self, driver, logger, success_logger, ai_verifier=None, vision_model='gpt-4o'):
         """Initialize the enhanced scraper service with AI verification capabilities."""
         self.driver = driver
         self.logger = logger
@@ -26,7 +28,11 @@ class EnhancedScraperService:
         self.retry_count = 0
         self.max_retries = 3
         self.vision_enabled = False  # Vision is disabled by default
+        self.vision_model = vision_model  # Model to use for vision verification
         self.active_learning = None  # Active learning component (optional)
+        
+        # Initialize URL validator
+        self.url_validator = URLValidator(logger)
         
         # Create screenshot directory
         self.screenshot_dir = os.path.join("data", "screenshots")
@@ -753,9 +759,9 @@ class EnhancedScraperService:
             Provide a detailed analysis of what you see in the image and whether this appears to be the correct athlete's profile.
             """
             
-            # Call the vision model
+            # Call the vision model with the configured model
             response = self.ai_verifier.client.chat.completions.create(
-                model="gpt-4-vision-preview",  # Use vision-capable model
+                model=self.vision_model,  # Use the configured vision model
                 messages=[
                     {
                         "role": "user",
@@ -825,34 +831,30 @@ class EnhancedScraperService:
             return False, 0.0, f"Vision verification error: {str(e)}"
     
     def _is_social_media_url(self, url: str) -> bool:
-        """Check if a URL is a social media profile URL."""
+        """Check if a URL is a valid social media profile URL using enhanced validation."""
         if not url:
             return False
             
-        url = url.lower()
-        
         # Check for email or phone
         if '@' in url or url.startswith('tel:') or re.match(r'^\d{3}[-.\s]?\d{3}[-.\s]?\d{4}$', url):
             return False
-            
-        # Check for social media domains
-        social_domains = ['twitter.com', 'facebook.com', 'instagram.com']
         
-        # Check if URL contains a social media domain
-        if any(domain in url for domain in social_domains):
-            # Exclude non-profile URLs
-            if any(x in url for x in ['/status/', '/posts/', '/p/', '/photos/', '/videos/', '/reels/', '/stories/']):
-                return False
-                
-            # Check for profile patterns
-            if 'twitter.com/' in url and len(url.split('twitter.com/')[1]) > 0:
-                return True
-            if 'facebook.com/' in url and len(url.split('facebook.com/')[1]) > 0:
-                return True
-            if 'instagram.com/' in url and len(url.split('instagram.com/')[1]) > 0:
-                return True
-                
-        return False
+        # Determine platform from URL
+        platform = ''
+        if 'twitter.com' in url.lower():
+            platform = 'twitter'
+        elif 'facebook.com' in url.lower():
+            platform = 'facebook'
+        elif 'instagram.com' in url.lower():
+            platform = 'instagram'
+        else:
+            return False
+            
+        # Use URL validator to validate the URL
+        validated_url = self.url_validator.clean_and_validate_url(url, platform)
+        
+        # If URL validator returns a valid URL, it's a social media profile URL
+        return validated_url is not None
     
     def _capture_profile_screenshot(self, url: str, athlete_info: Dict[str, Any]) -> Optional[str]:
         """Capture a screenshot of a social media profile for vision verification."""
@@ -894,79 +896,47 @@ class EnhancedScraperService:
             return None
     
     def extract_social_links(self, html: str, domain: str) -> List[str]:
-        """Extract and clean social media URLs."""
+        """Extract and clean social media URLs using enhanced validation."""
         if not html:
             return []
             
         soup = BeautifulSoup(html, 'html.parser')
-        links = []
+        raw_links = []
         
+        # Extract all links from the HTML
         for a in soup.find_all("a", href=True):
             href = a["href"].lower()
             if domain in href:
-                cleaned_url = self.clean_social_url(href, domain)
-                if cleaned_url:
-                    links.append(cleaned_url)
-                    
-        return list(set(links))
+                raw_links.append(href)
+        
+        # Determine platform from domain
+        platform = ''
+        if 'twitter.com' in domain:
+            platform = 'twitter'
+        elif 'facebook.com' in domain:
+            platform = 'facebook'
+        elif 'instagram.com' in domain:
+            platform = 'instagram'
+        
+        # Use URL validator to filter and clean links
+        valid_links = self.url_validator.filter_social_links(raw_links, platform)
+        
+        self.logger.debug(f"Extracted {len(raw_links)} links, {len(valid_links)} valid profile URLs for {domain}")
+        return valid_links
     
     def clean_social_url(self, url: str, platform: str) -> Optional[str]:
-        """Clean the URL to produce a base profile URL."""
-        url = url.lower().strip()
+        """Clean and validate a social media URL using enhanced validation."""
+        # Determine platform string from domain
+        platform_key = ''
+        if 'twitter.com' in platform:
+            platform_key = 'twitter'
+        elif 'facebook.com' in platform:
+            platform_key = 'facebook'
+        elif 'instagram.com' in platform:
+            platform_key = 'instagram'
         
-        # Remove query parameters
-        if '?' in url:
-            url = url.split('?')[0]
-            
-        # Handle Twitter URLs
-        if platform == 'twitter.com':
-            # Skip non-profile URLs
-            if any(x in url for x in ['/status/', '/likes/', '/retweets/']):
-                return None
-                
-            # Extract username
-            match = re.search(r'twitter\.com/([^/]+)', url)
-            if match:
-                username = match.group(1)
-                # Skip common non-profile paths
-                if username not in ['home', 'search', 'explore', 'notifications', 'messages']:
-                    return f'https://twitter.com/{username}'
-                    
-        # Handle Facebook URLs
-        elif platform == 'facebook.com':
-            # Skip non-profile URLs
-            if any(x in url for x in ['/posts/', '/photos/', '/videos/']):
-                return None
-                
-            # Handle numeric profile IDs
-            if 'profile.php?id=' in url:
-                match = re.search(r'profile\.php\?id=(\d+)', url)
-                if match:
-                    return f'https://facebook.com/profile.php?id={match.group(1)}'
-                    
-            # Extract username
-            match = re.search(r'facebook\.com/([^/]+)', url)
-            if match:
-                username = match.group(1)
-                # Skip common non-profile paths
-                if username not in ['public', 'pages', 'groups']:
-                    return f'https://facebook.com/{username}'
-                    
-        # Handle Instagram URLs
-        elif platform == 'instagram.com':
-            # Skip non-profile URLs
-            if any(x in url for x in ['/p/', '/reel/', '/stories/']):
-                return None
-                
-            # Extract username
-            match = re.search(r'instagram\.com/([^/]+)', url)
-            if match:
-                username = match.group(1)
-                # Skip common non-profile paths
-                if username not in ['explore', 'direct', 'stories']:
-                    return f'https://instagram.com/{username}'
-                    
-        return None
+        # Use URL validator to clean and validate the URL
+        return self.url_validator.clean_and_validate_url(url, platform_key)
     
     def extract_emails(self, html: str) -> List[str]:
         """Extract valid email addresses."""
