@@ -1,0 +1,10 @@
+selenium
+pandas
+colorama
+tqdm
+beautifulsoup4
+openpyxl
+python-dotenv
+requests
+urllib3
+openai>=1.6.0
