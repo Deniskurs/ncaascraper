@@ -1,2 +1,17 @@
-2025/03/11-16:48:54.379 3a03 Creating DB /Users/denis/ncaascraper/data/chrome_data/Default/Local Storage/leveldb since it was missing.
-2025/03/11-16:48:54.386 3a03 Reusing MANIFEST /Users/denis/ncaascraper/data/chrome_data/Default/Local Storage/leveldb/MANIFEST-000001
+2025/03/26-12:48:11.741 3d03 Reusing MANIFEST /Users/denis/ncaascraper/data/chrome_data/Default/Local Storage/leveldb/MANIFEST-000001
+2025/03/26-12:48:11.745 3d03 Recovering log #12
+2025/03/26-12:48:11.745 3d03 Level-0 table #15: started
+2025/03/26-12:48:11.759 3d03 Level-0 table #15: 23505 bytes OK
+2025/03/26-12:48:11.764 3d03 Delete type=0 #12
+2025/03/26-12:56:48.312 3a03 Level-0 table #18: started
+2025/03/26-12:56:48.320 3a03 Level-0 table #18: 23397 bytes OK
+2025/03/26-12:56:48.327 3a03 Delete type=0 #16
+2025/03/26-12:56:48.381 3a03 Compacting 4@0 + 1@1 files
+2025/03/26-12:56:48.405 3a03 Generated table #19@0: 387 keys, 19060 bytes
+2025/03/26-12:56:48.406 3a03 Compacted 4@0 + 1@1 files => 19060 bytes
+2025/03/26-12:56:48.407 3a03 compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/03/26-12:56:48.407 3a03 Delete type=2 #15
+2025/03/26-12:56:48.407 3a03 Delete type=2 #13
+2025/03/26-12:56:48.407 3a03 Delete type=2 #10
+2025/03/26-12:56:48.407 3a03 Delete type=2 #8
+2025/03/26-12:56:48.407 3a03 Delete type=2 #18

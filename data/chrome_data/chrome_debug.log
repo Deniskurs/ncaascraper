@@ -1,262 +1,247 @@
-[29342:259:0311/164854.259550:INFO:chrome_browser_cloud_management_controller.cc(196)] No machine level policy manager exists.
-[29349:259:0311/164855.029205:WARNING:viz_main_impl.cc(85)] VizNullHypothesis is disabled (not a warning)
-[29369:39683:0311/164856.051972:INFO:peer_connection_dependency_factory.cc(802)] Running WebRTC with a combined Network and Worker thread.
-[29342:259:0311/164856.258351:INFO:CONSOLE(72)] "[GSI_LOGGER]: Your client application uses one of the Google One Tap prompt UI status methods that may stop functioning when FedCM becomes mandatory. Refer to the migration guide to update your code accordingly and opt-in to FedCM to test your changes. Learn more: https://developers.google.com/identity/gsi/web/guides/fedcm-migration?s=dc#display_moment and https://developers.google.com/identity/gsi/web/guides/fedcm-migration?s=dc#skipped_moment", source: https://accounts.google.com/gsi/client (72)
-[29342:259:0311/164856.259114:INFO:CONSOLE(276)] "The mode button/widget are renamed to active/passive respectively and will be deprecated soon.", source: https://accounts.google.com/gsi/client (276)
-[29342:259:0311/164856.259730:INFO:CONSOLE(276)] "The mode button/widget are renamed to active/passive respectively and will be deprecated soon.", source: https://accounts.google.com/gsi/client (276)
-[29342:259:0311/164856.267878:INFO:CONSOLE(0)] "Not signed in with the identity provider.", source: https://x.com/i/flow/login (0)
-[29342:259:0311/164856.268055:INFO:CONSOLE(72)] "[GSI_LOGGER]: FedCM get() rejects with AbortError: signal is aborted without reason", source: https://accounts.google.com/gsi/client (72)
-[29342:259:0311/164856.268166:INFO:CONSOLE(0)] "Not signed in with the identity provider.", source: https://x.com/i/flow/login (0)
-[29342:259:0311/164856.366672:INFO:CONSOLE(0)] "Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner.", source: https://x.com/i/flow/login (0)
-[29342:259:0311/164859.138872:INFO:CONSOLE(72)] "[GSI_LOGGER]: FedCM get() rejects with NetworkError: Error retrieving a token.", source: https://accounts.google.com/gsi/client (72)
-[29390:259:0311/164859.600856:ERROR:system_services.cc(31)] SetApplicationIsDaemon: Error Domain=NSOSStatusErrorDomain Code=-50 "paramErr: error in user parameter list" (-50)
-[29342:259:0311/164903.877907:INFO:CONSOLE(0)] "[DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o", source: https://x.com/i/flow/login (0)
-[29342:259:0311/164904.425278:WARNING:controller_impl.cc(1187)] Background download complete, client: 6, completion type: 0, file size:5154
-[29342:259:0311/164904.432989:WARNING:controller_impl.cc(1187)] Background download complete, client: 6, completion type: 0, file size:265059
-[29342:259:0311/164904.664982:WARNING:controller_impl.cc(1187)] Background download complete, client: 6, completion type: 0, file size:883094
-[29342:259:0311/164904.722902:WARNING:controller_impl.cc(1187)] Background download complete, client: 6, completion type: 0, file size:45129
-[29342:259:0311/164904.899557:WARNING:controller_impl.cc(1187)] Background download complete, client: 6, completion type: 0, file size:2992963
-[29342:259:0311/164905.009844:WARNING:controller_impl.cc(1187)] Background download complete, client: 6, completion type: 0, file size:2747170
-[29342:259:0311/164905.040957:WARNING:controller_impl.cc(1187)] Background download complete, client: 6, completion type: 0, file size:4680
-[29342:259:0311/164906.549873:WARNING:download_manager_impl.cc(701)] A download with the same GUID already exists, the new request is ignored.
-[29342:259:0311/164906.619785:WARNING:controller_impl.cc(1187)] Background download complete, client: 6, completion type: 0, file size:2200227
-[29369:39683:0311/164906.774851:INFO:peer_connection_dependency_factory.cc(802)] Running WebRTC with a combined Network and Worker thread.
-[29342:259:0311/164906.926207:INFO:CONSOLE(0)] "Access to fetch at 'https://analytics.twitter.com/measurement/personalization_id_sync?twid_cookie_exchange=u%253D1899496222215569408' from origin 'https://x.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves your needs, set the request's mode to 'no-cors' to fetch the resource with CORS disabled.", source: https://x.com/home (0)
-[29369:39171:0311/164907.143008:WARNING:webrtc_voice_engine.cc(809)] Attempting to stop aecdump when no audio processing module is present
-[29342:259:0311/164907.300057:WARNING:controller_impl.cc(1187)] Background download complete, client: 6, completion type: 0, file size:118577
-[29413:14851:0311/164907.346073:ERROR:zip_reader.cc(153)] Cannot open ZIP from file handle 12
-[29413:14851:0311/164907.346326:ERROR:zip.cc(202)] Cannot open ZIP from file handle 12
-[29342:259:0311/164913.260901:INFO:CONSOLE(0)] "[DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o", source: https://www.facebook.com/ (0)
-[29342:259:0311/164913.349299:INFO:CONSOLE(0)] "
-%cStop! font-family:helvetica; font-size:20px; font-size:50px; font-weight:bold; color:red; -webkit-text-stroke:1px black;", source:  (0)
-[29342:259:0311/164913.349335:INFO:CONSOLE(0)] "
-%cThis is a browser feature intended for developers. If someone told you to copy and paste something here to enable a Facebook feature or "hack" someone's account, it is a scam and will give them access to your Facebook account. font-family:helvetica; font-size:20px; ", source:  (0)
-[29342:259:0311/164913.349347:INFO:CONSOLE(0)] "
-%cSee https://www.facebook.com/selfxss for more information. font-family:helvetica; font-size:20px; ", source:  (0)
-[29342:259:0311/164913.349369:INFO:CONSOLE(0)] "
-%c ", source:  (0)
-[29349:259:0311/164913.349840:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
-[29349:259:0311/164913.350460:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
-[29349:259:0311/164913.355329:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
-[29349:259:0311/164913.355771:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
-[29349:259:0311/164913.356572:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
-[29349:259:0311/164913.356927:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
-[29349:259:0311/164913.359150:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
-[29349:259:0311/164913.359511:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
-[29349:259:0311/164913.361053:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
-[29349:259:0311/164913.361340:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
-[29342:259:0311/164913.365085:INFO:CONSOLE(70)] "ErrorUtils caught an error:
+[58000:259:0326/124811.636956:INFO:chrome_browser_cloud_management_controller.cc(196)] No machine level policy manager exists.
+[58006:259:0326/124811.763836:WARNING:viz_main_impl.cc(85)] VizNullHypothesis is disabled (not a warning)
+[58007:12035:0326/124812.384566:WARNING:spdy_session.cc(2980)] Received HEADERS for invalid stream 1
+[58000:259:0326/124814.216815:INFO:CONSOLE(238)] "
+%cStop! font-family:helvetica; font-size:20px; font-size:50px; font-weight:bold; color:red; -webkit-text-stroke:1px black;", source: https://static.cdninstagram.com/rsrc.php/v4/yp/r/z53K205ct98.js (238)
+[58000:259:0326/124814.216984:INFO:CONSOLE(238)] "
+%cThis is a browser feature intended for developers. If someone told you to copy-paste something here to enable an Instagram feature or "hack" someone's account, it is a scam and will give them access to your Instagram account. font-family:helvetica; font-size:20px; ", source: https://static.cdninstagram.com/rsrc.php/v4/yp/r/z53K205ct98.js (238)
+[58000:259:0326/124814.217024:INFO:CONSOLE(238)] "
+%cSee https://www.facebook.com/selfxss for more information. font-family:helvetica; font-size:20px; ", source: https://static.cdninstagram.com/rsrc.php/v4/yp/r/z53K205ct98.js (238)
+[58000:259:0326/124814.217057:INFO:CONSOLE(238)] "
+%c ", source: https://static.cdninstagram.com/rsrc.php/v4/yp/r/z53K205ct98.js (238)
+[58006:259:0326/124814.217676:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
+[58006:259:0326/124814.218456:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
+[58000:259:0326/124814.235217:INFO:CONSOLE(0)] "Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner.", source: https://www.instagram.com/ (0)
+[58000:259:0326/124814.249828:INFO:CONSOLE(0)] "[DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o", source: https://www.instagram.com/ (0)
+[58000:259:0326/124814.964285:INFO:CONSOLE(0)] "[DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o", source: https://www.instagram.com/ (0)
+[58000:259:0326/124814.975092:INFO:CONSOLE(238)] "
+%cStop! font-family:helvetica; font-size:20px; font-size:50px; font-weight:bold; color:red; -webkit-text-stroke:1px black;", source: https://static.cdninstagram.com/rsrc.php/v4/yp/r/z53K205ct98.js (238)
+[58000:259:0326/124814.975160:INFO:CONSOLE(238)] "
+%cThis is a browser feature intended for developers. If someone told you to copy-paste something here to enable an Instagram feature or "hack" someone's account, it is a scam and will give them access to your Instagram account. font-family:helvetica; font-size:20px; ", source: https://static.cdninstagram.com/rsrc.php/v4/yp/r/z53K205ct98.js (238)
+[58000:259:0326/124814.975176:INFO:CONSOLE(238)] "
+%cSee https://www.facebook.com/selfxss for more information. font-family:helvetica; font-size:20px; ", source: https://static.cdninstagram.com/rsrc.php/v4/yp/r/z53K205ct98.js (238)
+[58000:259:0326/124814.975188:INFO:CONSOLE(238)] "
+%c ", source: https://static.cdninstagram.com/rsrc.php/v4/yp/r/z53K205ct98.js (238)
+[58006:259:0326/124814.975335:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
+[58006:259:0326/124814.975709:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
+[58000:259:0326/124815.033006:INFO:CONSOLE(0)] "Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner.", source: https://www.instagram.com/ (0)
+[58000:259:0326/124832.135985:INFO:CONSOLE(238)] "
+%cStop! font-family:helvetica; font-size:20px; font-size:50px; font-weight:bold; color:red; -webkit-text-stroke:1px black;", source: https://static.cdninstagram.com/rsrc.php/v4/yp/r/z53K205ct98.js (238)
+[58006:259:0326/124832.136215:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
+[58000:259:0326/124832.136904:INFO:CONSOLE(238)] "
+%cThis is a browser feature intended for developers. If someone told you to copy-paste something here to enable an Instagram feature or "hack" someone's account, it is a scam and will give them access to your Instagram account. font-family:helvetica; font-size:20px; ", source: https://static.cdninstagram.com/rsrc.php/v4/yp/r/z53K205ct98.js (238)
+[58000:259:0326/124832.136939:INFO:CONSOLE(238)] "
+%cSee https://www.facebook.com/selfxss for more information. font-family:helvetica; font-size:20px; ", source: https://static.cdninstagram.com/rsrc.php/v4/yp/r/z53K205ct98.js (238)
+[58000:259:0326/124832.136950:INFO:CONSOLE(238)] "
+%c ", source: https://static.cdninstagram.com/rsrc.php/v4/yp/r/z53K205ct98.js (238)
+[58006:259:0326/124832.137196:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
+[58000:259:0326/124832.169255:INFO:CONSOLE(0)] "Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner.", source: https://www.instagram.com/ (0)
+[58000:259:0326/124832.204144:INFO:CONSOLE(0)] "[DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o", source: https://www.instagram.com/ (0)
+[58000:259:0326/124857.411303:INFO:CONSOLE(238)] "
+%cStop! font-family:helvetica; font-size:20px; font-size:50px; font-weight:bold; color:red; -webkit-text-stroke:1px black;", source: https://static.cdninstagram.com/rsrc.php/v4/yp/r/z53K205ct98.js (238)
+[58000:259:0326/124857.411469:INFO:CONSOLE(238)] "
+%cThis is a browser feature intended for developers. If someone told you to copy-paste something here to enable an Instagram feature or "hack" someone's account, it is a scam and will give them access to your Instagram account. font-family:helvetica; font-size:20px; ", source: https://static.cdninstagram.com/rsrc.php/v4/yp/r/z53K205ct98.js (238)
+[58000:259:0326/124857.411486:INFO:CONSOLE(238)] "
+%cSee https://www.facebook.com/selfxss for more information. font-family:helvetica; font-size:20px; ", source: https://static.cdninstagram.com/rsrc.php/v4/yp/r/z53K205ct98.js (238)
+[58000:259:0326/124857.411497:INFO:CONSOLE(238)] "
+%c ", source: https://static.cdninstagram.com/rsrc.php/v4/yp/r/z53K205ct98.js (238)
+[58006:259:0326/124857.746537:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
+[58006:259:0326/124857.746864:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
+[58000:259:0326/124857.842121:INFO:CONSOLE(0)] "Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner.", source: https://www.instagram.com/accounts/onetap/?next=%2F (0)
+[58000:259:0326/124859.061305:INFO:CONSOLE(70)] "ErrorUtils caught an error:
 
-JS::call("WebCookieUseSingleLevelManageDialogController", "init", ...) did not fire because it has missing dependencies.
-WebCookieUseSingleLevelManageDialogController is ready
-__call__WebCookieUseSingleLevelManageDialogController.init__23 is waiting for __elem_45d73b5d_0_0_8B
-__elem_45d73b5d_0_0_8B is not defined
+DTSG response is not valid: {"__ar":1,"error":1357004,"errorSummary":"Sorry, something went wrong","errorDescription":"Please try closing and re-opening your browser window.","isNotCritical":1,"rid":"AGSUdgqtN_xfW3nshJu-l6e","payload":null,"lid":"7486099388656831632"}' [Caught in: [MAWRotateDTSG] Error rotating DTSG: (Error)]
 
-Subsequent non-fatal errors won't be logged; see https://fburl.com/debugjs. [object Object]", source: https://static.xx.fbcdn.net/rsrc.php/v4/y_/r/N165WDv13Eo.js (70)
-[29342:259:0311/164925.911729:INFO:CONSOLE(239)] "
-%cStop! font-family:helvetica; font-size:20px; font-size:50px; font-weight:bold; color:red; -webkit-text-stroke:1px black;", source: https://static.xx.fbcdn.net/rsrc.php/v4/yf/r/DBxTAKKzYR5.js (239)
-[29342:259:0311/164925.912045:INFO:CONSOLE(239)] "
-%cThis is a browser feature intended for developers. If someone told you to copy and paste something here to enable a Facebook feature or "hack" someone's account, it is a scam and will give them access to your Facebook account. font-family:helvetica; font-size:20px; ", source: https://static.xx.fbcdn.net/rsrc.php/v4/yf/r/DBxTAKKzYR5.js (239)
-[29342:259:0311/164925.912087:INFO:CONSOLE(239)] "
-%cSee https://www.facebook.com/selfxss for more information. font-family:helvetica; font-size:20px; ", source: https://static.xx.fbcdn.net/rsrc.php/v4/yf/r/DBxTAKKzYR5.js (239)
-[29342:259:0311/164925.912100:INFO:CONSOLE(239)] "
-%c ", source: https://static.xx.fbcdn.net/rsrc.php/v4/yf/r/DBxTAKKzYR5.js (239)
-[29369:39171:0311/164926.014970:WARNING:webrtc_voice_engine.cc(809)] Attempting to stop aecdump when no audio processing module is present
-[29349:259:0311/164926.221354:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
-[29349:259:0311/164926.221769:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
-[29349:259:0311/164926.237665:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
-[29349:259:0311/164926.238641:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
-[29342:259:0311/164928.122264:INFO:CONSOLE(93)] "ErrorUtils caught an error:
+Subsequent non-fatal errors won't be logged; see https://fburl.com/debugjs. [object Object]", source: https://static.cdninstagram.com/rsrc.php/v4/yp/r/z53K205ct98.js (70)
+[58000:259:0326/124901.579091:INFO:CONSOLE(234)] "Permissions policy violation: unload is not allowed in this document.", source: https://static.xx.fbcdn.net/rsrc.php/v4/yp/r/z53K205ct98.js (234)
+[58000:259:0326/124904.840599:INFO:CONSOLE(238)] "
+%cStop! font-family:helvetica; font-size:20px; font-size:50px; font-weight:bold; color:red; -webkit-text-stroke:1px black;", source: https://static.cdninstagram.com/rsrc.php/v4/yp/r/z53K205ct98.js (238)
+[58000:259:0326/124904.842957:INFO:CONSOLE(238)] "
+%cThis is a browser feature intended for developers. If someone told you to copy-paste something here to enable an Instagram feature or "hack" someone's account, it is a scam and will give them access to your Instagram account. font-family:helvetica; font-size:20px; ", source: https://static.cdninstagram.com/rsrc.php/v4/yp/r/z53K205ct98.js (238)
+[58000:259:0326/124904.843007:INFO:CONSOLE(238)] "
+%cSee https://www.facebook.com/selfxss for more information. font-family:helvetica; font-size:20px; ", source: https://static.cdninstagram.com/rsrc.php/v4/yp/r/z53K205ct98.js (238)
+[58000:259:0326/124904.843022:INFO:CONSOLE(238)] "
+%c ", source: https://static.cdninstagram.com/rsrc.php/v4/yp/r/z53K205ct98.js (238)
+[58135:259:0326/124904.941745:ERROR:system_services.cc(31)] SetApplicationIsDaemon: Error Domain=NSOSStatusErrorDomain Code=-50 "paramErr: error in user parameter list" (-50)
+[58006:259:0326/124905.106509:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
+[58006:259:0326/124905.107078:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
+[58000:259:0326/124905.409037:INFO:CONSOLE(0)] "Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner.", source: https://www.instagram.com/ (0)
+[58000:259:0326/124905.896011:INFO:CONSOLE(70)] "ErrorUtils caught an error:
 
-Error performing FTS transaction
+DTSG response is not valid: {"__ar":1,"error":1357004,"errorSummary":"Sorry, something went wrong","errorDescription":"Please try closing and re-opening your browser window.","isNotCritical":1,"rid":"A8s2q6o3fn0NQbSGbSNDFDE","payload":null,"lid":"7486099414831332832"}' [Caught in: [MAWRotateDTSG] Error rotating DTSG: (Error)]
 
-Subsequent non-fatal errors won't be logged; see https://fburl.com/debugjs. [object Object]", source: https://static.xx.fbcdn.net/rsrc.php/v4igbu4/yM/l/rt/TMauf99W080_OikOZHUUmR5Ab1VegvqHWWqDQO8mblO7.js (93)
-[29349:259:0311/164930.897392:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
-[29349:259:0311/164930.897723:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
-[29342:259:0311/164930.912086:INFO:CONSOLE(239)] "
-%cStop! font-family:helvetica; font-size:20px; font-size:50px; font-weight:bold; color:red; -webkit-text-stroke:1px black;", source: https://static.cdninstagram.com/rsrc.php/v4/yf/r/DBxTAKKzYR5.js (239)
-[29342:259:0311/164930.912134:INFO:CONSOLE(239)] "
-%cThis is a browser feature intended for developers. If someone told you to copy-paste something here to enable an Instagram feature or "hack" someone's account, it is a scam and will give them access to your Instagram account. font-family:helvetica; font-size:20px; ", source: https://static.cdninstagram.com/rsrc.php/v4/yf/r/DBxTAKKzYR5.js (239)
-[29342:259:0311/164930.912167:INFO:CONSOLE(239)] "
-%cSee https://www.facebook.com/selfxss for more information. font-family:helvetica; font-size:20px; ", source: https://static.cdninstagram.com/rsrc.php/v4/yf/r/DBxTAKKzYR5.js (239)
-[29342:259:0311/164930.912193:INFO:CONSOLE(239)] "
-%c ", source: https://static.cdninstagram.com/rsrc.php/v4/yf/r/DBxTAKKzYR5.js (239)
-[29349:259:0311/164930.912494:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
-[29349:259:0311/164930.912805:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
-[29342:259:0311/164931.019964:INFO:CONSOLE(0)] "Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner.", source: https://www.instagram.com/accounts/login/ (0)
-[29342:259:0311/164931.334125:INFO:CONSOLE(0)] "[DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o", source: https://www.instagram.com/accounts/login/ (0)
-[29342:259:0311/164934.203968:INFO:CONSOLE(8)] "Rendering was performed in a subtree hidden by content-visibility.", source: https://www.bing.com/search?q=Swade+Hutchinson+ncaa+football+player (8)
-[29342:259:0311/164934.204463:INFO:CONSOLE(8)] "Rendering was performed in a subtree hidden by content-visibility.", source: https://www.bing.com/search?q=Swade+Hutchinson+ncaa+football+player (8)
-[29342:259:0311/164934.204484:INFO:CONSOLE(8)] "Rendering was performed in a subtree hidden by content-visibility.", source: https://www.bing.com/search?q=Swade+Hutchinson+ncaa+football+player (8)
-[29342:259:0311/164934.204506:INFO:CONSOLE(8)] "Rendering was performed in a subtree hidden by content-visibility.", source: https://www.bing.com/search?q=Swade+Hutchinson+ncaa+football+player (8)
-[29342:259:0311/164934.204531:INFO:CONSOLE(8)] "Rendering was performed in a subtree hidden by content-visibility.", source: https://www.bing.com/search?q=Swade+Hutchinson+ncaa+football+player (8)
-[29342:259:0311/164934.744986:INFO:CONSOLE(1)] "Listener added for a 'DOMNodeInserted' mutation event. Support for this event type has been removed, and this event will no longer be fired. See https://chromestatus.com/feature/5083947249172480 for more information.", source: https://r.bing.com/rp/eKvcHdnNwo1WcxoSioV4ztnfZk8.br.js (1)
-[29342:259:0311/164934.745018:INFO:CONSOLE(1)] "Listener added for a 'DOMNodeRemoved' mutation event. Support for this event type has been removed, and this event will no longer be fired. See https://chromestatus.com/feature/5083947249172480 for more information.", source: https://r.bing.com/rp/eKvcHdnNwo1WcxoSioV4ztnfZk8.br.js (1)
-[29342:259:0311/164934.782873:INFO:CONSOLE(18)] "BSSO Telemetry: {"result":"Error","error":"NoExtension","type":"ChromeSsoTelemetry","data":{},"traces":["BrowserSSO Initialized","Creating ChromeBrowserCore provider","Sending message for method CreateProviderAsync","Received message for method CreateProviderAsync","Error: ChromeBrowserCore error NoExtension: Extension is not installed."]}", source: https://aadcdn.msftauth.net/shared/1.0/content/js/BssoInterrupt_Core_9810YxmrLqOR1rQ4anyNMg2.js (18)
-[29342:259:0311/164934.932286:INFO:CONSOLE(0)] "An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.", source: https://www.bing.com/orgid/idtoken/conditional (0)
-[29342:259:0311/164934.982347:INFO:CONSOLE(6)] "Rendering was performed in a subtree hidden by content-visibility.", source: https://www.bing.com/search?q=Swade+Hutchinson+ncaa+football+player&rdr=1&rdrig=AECA50817D9A44BB97B7BB1B695B0369 (6)
-[29342:259:0311/164934.982806:INFO:CONSOLE(6)] "Rendering was performed in a subtree hidden by content-visibility.", source: https://www.bing.com/search?q=Swade+Hutchinson+ncaa+football+player&rdr=1&rdrig=AECA50817D9A44BB97B7BB1B695B0369 (6)
-[29342:259:0311/164934.982828:INFO:CONSOLE(6)] "Rendering was performed in a subtree hidden by content-visibility.", source: https://www.bing.com/search?q=Swade+Hutchinson+ncaa+football+player&rdr=1&rdrig=AECA50817D9A44BB97B7BB1B695B0369 (6)
-[29342:259:0311/164934.982838:INFO:CONSOLE(6)] "Rendering was performed in a subtree hidden by content-visibility.", source: https://www.bing.com/search?q=Swade+Hutchinson+ncaa+football+player&rdr=1&rdrig=AECA50817D9A44BB97B7BB1B695B0369 (6)
-[29342:259:0311/164934.982858:INFO:CONSOLE(6)] "Rendering was performed in a subtree hidden by content-visibility.", source: https://www.bing.com/search?q=Swade+Hutchinson+ncaa+football+player&rdr=1&rdrig=AECA50817D9A44BB97B7BB1B695B0369 (6)
-[29342:259:0311/164935.500053:INFO:CONSOLE(1)] "Listener added for a 'DOMNodeInserted' mutation event. Support for this event type has been removed, and this event will no longer be fired. See https://chromestatus.com/feature/5083947249172480 for more information.", source: https://r.bing.com/rp/eKvcHdnNwo1WcxoSioV4ztnfZk8.br.js (1)
-[29342:259:0311/164935.500093:INFO:CONSOLE(1)] "Listener added for a 'DOMNodeRemoved' mutation event. Support for this event type has been removed, and this event will no longer be fired. See https://chromestatus.com/feature/5083947249172480 for more information.", source: https://r.bing.com/rp/eKvcHdnNwo1WcxoSioV4ztnfZk8.br.js (1)
-[29342:259:0311/164935.611594:INFO:CONSOLE(0)] "An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.", source: https://www.bing.com/orgid/idtoken/conditional (0)
-[29342:259:0311/164946.348698:INFO:CONSOLE(8)] "Rendering was performed in a subtree hidden by content-visibility.", source: https://www.bing.com/search?q=Swade+Hutchinson+site%3A.edu+athletics+roster+football (8)
-[29342:259:0311/164946.349037:INFO:CONSOLE(8)] "Rendering was performed in a subtree hidden by content-visibility.", source: https://www.bing.com/search?q=Swade+Hutchinson+site%3A.edu+athletics+roster+football (8)
-[29342:259:0311/164946.349072:INFO:CONSOLE(8)] "Rendering was performed in a subtree hidden by content-visibility.", source: https://www.bing.com/search?q=Swade+Hutchinson+site%3A.edu+athletics+roster+football (8)
-[29342:259:0311/164946.349092:INFO:CONSOLE(8)] "Rendering was performed in a subtree hidden by content-visibility.", source: https://www.bing.com/search?q=Swade+Hutchinson+site%3A.edu+athletics+roster+football (8)
-[29342:259:0311/164946.349101:INFO:CONSOLE(8)] "Rendering was performed in a subtree hidden by content-visibility.", source: https://www.bing.com/search?q=Swade+Hutchinson+site%3A.edu+athletics+roster+football (8)
-[29342:259:0311/164946.507356:INFO:CONSOLE(1)] "Listener added for a 'DOMNodeInserted' mutation event. Support for this event type has been removed, and this event will no longer be fired. See https://chromestatus.com/feature/5083947249172480 for more information.", source: https://r.bing.com/rp/eKvcHdnNwo1WcxoSioV4ztnfZk8.br.js (1)
-[29342:259:0311/164946.507401:INFO:CONSOLE(1)] "Listener added for a 'DOMNodeRemoved' mutation event. Support for this event type has been removed, and this event will no longer be fired. See https://chromestatus.com/feature/5083947249172480 for more information.", source: https://r.bing.com/rp/eKvcHdnNwo1WcxoSioV4ztnfZk8.br.js (1)
-[29342:259:0311/164949.103166:INFO:CONSOLE(8)] "Rendering was performed in a subtree hidden by content-visibility.", source: https://www.bing.com/search?q=Swade+Hutchinson+site%3A.edu+athletics+roster+football+site%3Atwitter.com (8)
-[29342:259:0311/164949.103484:INFO:CONSOLE(8)] "Rendering was performed in a subtree hidden by content-visibility.", source: https://www.bing.com/search?q=Swade+Hutchinson+site%3A.edu+athletics+roster+football+site%3Atwitter.com (8)
-[29342:259:0311/164949.103506:INFO:CONSOLE(8)] "Rendering was performed in a subtree hidden by content-visibility.", source: https://www.bing.com/search?q=Swade+Hutchinson+site%3A.edu+athletics+roster+football+site%3Atwitter.com (8)
-[29342:259:0311/164949.103517:INFO:CONSOLE(8)] "Rendering was performed in a subtree hidden by content-visibility.", source: https://www.bing.com/search?q=Swade+Hutchinson+site%3A.edu+athletics+roster+football+site%3Atwitter.com (8)
-[29342:259:0311/164949.103540:INFO:CONSOLE(8)] "Rendering was performed in a subtree hidden by content-visibility.", source: https://www.bing.com/search?q=Swade+Hutchinson+site%3A.edu+athletics+roster+football+site%3Atwitter.com (8)
-[29342:259:0311/164949.248217:INFO:CONSOLE(1)] "Listener added for a 'DOMNodeInserted' mutation event. Support for this event type has been removed, and this event will no longer be fired. See https://chromestatus.com/feature/5083947249172480 for more information.", source: https://r.bing.com/rp/eKvcHdnNwo1WcxoSioV4ztnfZk8.br.js (1)
-[29342:259:0311/164949.248259:INFO:CONSOLE(1)] "Listener added for a 'DOMNodeRemoved' mutation event. Support for this event type has been removed, and this event will no longer be fired. See https://chromestatus.com/feature/5083947249172480 for more information.", source: https://r.bing.com/rp/eKvcHdnNwo1WcxoSioV4ztnfZk8.br.js (1)
-[29342:259:0311/164949.401348:INFO:CONSOLE(0)] "An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.", source: https://www.bing.com/orgid/idtoken/conditional (0)
-[29342:259:0311/164949.449250:INFO:CONSOLE(6)] "Rendering was performed in a subtree hidden by content-visibility.", source: https://www.bing.com/search?q=Swade+Hutchinson+site%3A.edu+athletics+roster+football+site%3Atwitter.com&rdr=1&rdrig=05ECA14D5FEB4B70BC518866BE4EB454 (6)
-[29342:259:0311/164949.449755:INFO:CONSOLE(6)] "Rendering was performed in a subtree hidden by content-visibility.", source: https://www.bing.com/search?q=Swade+Hutchinson+site%3A.edu+athletics+roster+football+site%3Atwitter.com&rdr=1&rdrig=05ECA14D5FEB4B70BC518866BE4EB454 (6)
-[29342:259:0311/164949.449790:INFO:CONSOLE(6)] "Rendering was performed in a subtree hidden by content-visibility.", source: https://www.bing.com/search?q=Swade+Hutchinson+site%3A.edu+athletics+roster+football+site%3Atwitter.com&rdr=1&rdrig=05ECA14D5FEB4B70BC518866BE4EB454 (6)
-[29342:259:0311/164949.449801:INFO:CONSOLE(6)] "Rendering was performed in a subtree hidden by content-visibility.", source: https://www.bing.com/search?q=Swade+Hutchinson+site%3A.edu+athletics+roster+football+site%3Atwitter.com&rdr=1&rdrig=05ECA14D5FEB4B70BC518866BE4EB454 (6)
-[29342:259:0311/164949.449811:INFO:CONSOLE(6)] "Rendering was performed in a subtree hidden by content-visibility.", source: https://www.bing.com/search?q=Swade+Hutchinson+site%3A.edu+athletics+roster+football+site%3Atwitter.com&rdr=1&rdrig=05ECA14D5FEB4B70BC518866BE4EB454 (6)
-[29342:259:0311/164949.734953:INFO:CONSOLE(1)] "Listener added for a 'DOMNodeInserted' mutation event. Support for this event type has been removed, and this event will no longer be fired. See https://chromestatus.com/feature/5083947249172480 for more information.", source: https://r.bing.com/rp/eKvcHdnNwo1WcxoSioV4ztnfZk8.br.js (1)
-[29342:259:0311/164949.734997:INFO:CONSOLE(1)] "Listener added for a 'DOMNodeRemoved' mutation event. Support for this event type has been removed, and this event will no longer be fired. See https://chromestatus.com/feature/5083947249172480 for more information.", source: https://r.bing.com/rp/eKvcHdnNwo1WcxoSioV4ztnfZk8.br.js (1)
-[29342:259:0311/164949.854716:INFO:CONSOLE(0)] "An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.", source: https://www.bing.com/orgid/idtoken/conditional (0)
-[29342:259:0311/164953.766398:INFO:CONSOLE(1)] "Listener added for a 'DOMNodeInserted' mutation event. Support for this event type has been removed, and this event will no longer be fired. See https://chromestatus.com/feature/5083947249172480 for more information.", source: https://r.bing.com/rp/eKvcHdnNwo1WcxoSioV4ztnfZk8.br.js (1)
-[29342:259:0311/164953.766616:INFO:CONSOLE(1)] "Listener added for a 'DOMNodeRemoved' mutation event. Support for this event type has been removed, and this event will no longer be fired. See https://chromestatus.com/feature/5083947249172480 for more information.", source: https://r.bing.com/rp/eKvcHdnNwo1WcxoSioV4ztnfZk8.br.js (1)
-[29342:259:0311/164953.903058:INFO:CONSOLE(0)] "An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.", source: https://www.bing.com/orgid/idtoken/conditional (0)
-[29342:259:0311/164958.503105:INFO:CONSOLE(8)] "Rendering was performed in a subtree hidden by content-visibility.", source: https://www.bing.com/search?q=Swade+Hutchinson+site%3A.edu+athletics+roster+football+site%3Ainstagram.com (8)
-[29342:259:0311/164958.503483:INFO:CONSOLE(8)] "Rendering was performed in a subtree hidden by content-visibility.", source: https://www.bing.com/search?q=Swade+Hutchinson+site%3A.edu+athletics+roster+football+site%3Ainstagram.com (8)
-[29342:259:0311/164958.503513:INFO:CONSOLE(8)] "Rendering was performed in a subtree hidden by content-visibility.", source: https://www.bing.com/search?q=Swade+Hutchinson+site%3A.edu+athletics+roster+football+site%3Ainstagram.com (8)
-[29342:259:0311/164958.503528:INFO:CONSOLE(8)] "Rendering was performed in a subtree hidden by content-visibility.", source: https://www.bing.com/search?q=Swade+Hutchinson+site%3A.edu+athletics+roster+football+site%3Ainstagram.com (8)
-[29342:259:0311/164958.503541:INFO:CONSOLE(8)] "Rendering was performed in a subtree hidden by content-visibility.", source: https://www.bing.com/search?q=Swade+Hutchinson+site%3A.edu+athletics+roster+football+site%3Ainstagram.com (8)
-[29342:259:0311/164958.614423:INFO:CONSOLE(1)] "Listener added for a 'DOMNodeInserted' mutation event. Support for this event type has been removed, and this event will no longer be fired. See https://chromestatus.com/feature/5083947249172480 for more information.", source: https://r.bing.com/rp/eKvcHdnNwo1WcxoSioV4ztnfZk8.br.js (1)
-[29342:259:0311/164958.614479:INFO:CONSOLE(1)] "Listener added for a 'DOMNodeRemoved' mutation event. Support for this event type has been removed, and this event will no longer be fired. See https://chromestatus.com/feature/5083947249172480 for more information.", source: https://r.bing.com/rp/eKvcHdnNwo1WcxoSioV4ztnfZk8.br.js (1)
-[29342:259:0311/164958.748128:INFO:CONSOLE(0)] "An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.", source: https://www.bing.com/orgid/idtoken/conditional (0)
-[29342:259:0311/164958.817557:INFO:CONSOLE(6)] "Rendering was performed in a subtree hidden by content-visibility.", source: https://www.bing.com/search?q=Swade+Hutchinson+site%3A.edu+athletics+roster+football+site%3Ainstagram.com&rdr=1&rdrig=A321D6CA7A7F4898B458C48C88C1A847 (6)
-[29342:259:0311/164958.817786:INFO:CONSOLE(6)] "Rendering was performed in a subtree hidden by content-visibility.", source: https://www.bing.com/search?q=Swade+Hutchinson+site%3A.edu+athletics+roster+football+site%3Ainstagram.com&rdr=1&rdrig=A321D6CA7A7F4898B458C48C88C1A847 (6)
-[29342:259:0311/164958.817809:INFO:CONSOLE(6)] "Rendering was performed in a subtree hidden by content-visibility.", source: https://www.bing.com/search?q=Swade+Hutchinson+site%3A.edu+athletics+roster+football+site%3Ainstagram.com&rdr=1&rdrig=A321D6CA7A7F4898B458C48C88C1A847 (6)
-[29342:259:0311/164958.817836:INFO:CONSOLE(6)] "Rendering was performed in a subtree hidden by content-visibility.", source: https://www.bing.com/search?q=Swade+Hutchinson+site%3A.edu+athletics+roster+football+site%3Ainstagram.com&rdr=1&rdrig=A321D6CA7A7F4898B458C48C88C1A847 (6)
-[29342:259:0311/164958.817848:INFO:CONSOLE(6)] "Rendering was performed in a subtree hidden by content-visibility.", source: https://www.bing.com/search?q=Swade+Hutchinson+site%3A.edu+athletics+roster+football+site%3Ainstagram.com&rdr=1&rdrig=A321D6CA7A7F4898B458C48C88C1A847 (6)
-[29342:259:0311/164959.104524:INFO:CONSOLE(1)] "Listener added for a 'DOMNodeInserted' mutation event. Support for this event type has been removed, and this event will no longer be fired. See https://chromestatus.com/feature/5083947249172480 for more information.", source: https://r.bing.com/rp/eKvcHdnNwo1WcxoSioV4ztnfZk8.br.js (1)
-[29342:259:0311/164959.104562:INFO:CONSOLE(1)] "Listener added for a 'DOMNodeRemoved' mutation event. Support for this event type has been removed, and this event will no longer be fired. See https://chromestatus.com/feature/5083947249172480 for more information.", source: https://r.bing.com/rp/eKvcHdnNwo1WcxoSioV4ztnfZk8.br.js (1)
-[29342:259:0311/164959.252793:INFO:CONSOLE(0)] "An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.", source: https://www.bing.com/orgid/idtoken/conditional (0)
-[29342:259:0311/165003.863757:INFO:CONSOLE(1)] "Listener added for a 'DOMNodeInserted' mutation event. Support for this event type has been removed, and this event will no longer be fired. See https://chromestatus.com/feature/5083947249172480 for more information.", source: https://r.bing.com/rp/eKvcHdnNwo1WcxoSioV4ztnfZk8.br.js (1)
-[29342:259:0311/165003.863820:INFO:CONSOLE(1)] "Listener added for a 'DOMNodeRemoved' mutation event. Support for this event type has been removed, and this event will no longer be fired. See https://chromestatus.com/feature/5083947249172480 for more information.", source: https://r.bing.com/rp/eKvcHdnNwo1WcxoSioV4ztnfZk8.br.js (1)
-[29342:259:0311/165004.089074:INFO:CONSOLE(0)] "An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.", source: https://www.bing.com/orgid/idtoken/conditional (0)
-[29342:259:0311/165005.041022:INFO:CONSOLE(1)] "Listener added for a 'DOMNodeInserted' mutation event. Support for this event type has been removed, and this event will no longer be fired. See https://chromestatus.com/feature/5083947249172480 for more information.", source: https://r.bing.com/rp/eKvcHdnNwo1WcxoSioV4ztnfZk8.br.js (1)
-[29342:259:0311/165005.041325:INFO:CONSOLE(1)] "Listener added for a 'DOMNodeRemoved' mutation event. Support for this event type has been removed, and this event will no longer be fired. See https://chromestatus.com/feature/5083947249172480 for more information.", source: https://r.bing.com/rp/eKvcHdnNwo1WcxoSioV4ztnfZk8.br.js (1)
-[29342:259:0311/165005.415979:INFO:CONSOLE(0)] "An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.", source: https://www.bing.com/orgid/idtoken/conditional (0)
-[29342:259:0311/165018.427254:INFO:CONSOLE(1)] "Listener added for a 'DOMNodeInserted' mutation event. Support for this event type has been removed, and this event will no longer be fired. See https://chromestatus.com/feature/5083947249172480 for more information.", source: https://r.bing.com/rp/eKvcHdnNwo1WcxoSioV4ztnfZk8.br.js (1)
-[29342:259:0311/165018.427555:INFO:CONSOLE(1)] "Listener added for a 'DOMNodeRemoved' mutation event. Support for this event type has been removed, and this event will no longer be fired. See https://chromestatus.com/feature/5083947249172480 for more information.", source: https://r.bing.com/rp/eKvcHdnNwo1WcxoSioV4ztnfZk8.br.js (1)
-[29342:259:0311/165018.607473:INFO:CONSOLE(0)] "An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.", source: https://www.bing.com/orgid/idtoken/conditional (0)
-[29342:259:0311/165019.094261:INFO:CONSOLE(1)] "Listener added for a 'DOMNodeInserted' mutation event. Support for this event type has been removed, and this event will no longer be fired. See https://chromestatus.com/feature/5083947249172480 for more information.", source: https://r.bing.com/rp/eKvcHdnNwo1WcxoSioV4ztnfZk8.br.js (1)
-[29342:259:0311/165019.094336:INFO:CONSOLE(1)] "Listener added for a 'DOMNodeRemoved' mutation event. Support for this event type has been removed, and this event will no longer be fired. See https://chromestatus.com/feature/5083947249172480 for more information.", source: https://r.bing.com/rp/eKvcHdnNwo1WcxoSioV4ztnfZk8.br.js (1)
-[29342:259:0311/165644.015575:WARNING:compositor_animation_observer.cc(66)] CompositorAnimationObserver is active for too long (63.4908s) location=TabIcon@chrome/browser/ui/views/tabs/tab_icon.cc:94
-[29342:259:0311/165712.930950:INFO:CONSOLE(239)] "
-%cStop! font-family:helvetica; font-size:20px; font-size:50px; font-weight:bold; color:red; -webkit-text-stroke:1px black;", source: https://static.xx.fbcdn.net/rsrc.php/v4/yf/r/DBxTAKKzYR5.js (239)
-[29342:259:0311/165712.931202:INFO:CONSOLE(239)] "
-%cThis is a browser feature intended for developers. If someone told you to copy and paste something here to enable a Facebook feature or "hack" someone's account, it is a scam and will give them access to your Facebook account. font-family:helvetica; font-size:20px; ", source: https://static.xx.fbcdn.net/rsrc.php/v4/yf/r/DBxTAKKzYR5.js (239)
-[29342:259:0311/165712.931238:INFO:CONSOLE(239)] "
-%cSee https://www.facebook.com/selfxss for more information. font-family:helvetica; font-size:20px; ", source: https://static.xx.fbcdn.net/rsrc.php/v4/yf/r/DBxTAKKzYR5.js (239)
-[29342:259:0311/165712.931253:INFO:CONSOLE(239)] "
-%c ", source: https://static.xx.fbcdn.net/rsrc.php/v4/yf/r/DBxTAKKzYR5.js (239)
-[29349:259:0311/165712.931959:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
-[29349:259:0311/165712.933380:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
-[29342:259:0311/165739.670390:INFO:CONSOLE(239)] "
-%cStop! font-family:helvetica; font-size:20px; font-size:50px; font-weight:bold; color:red; -webkit-text-stroke:1px black;", source: https://static.xx.fbcdn.net/rsrc.php/v4/yf/r/DBxTAKKzYR5.js (239)
-[29349:259:0311/165739.670683:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
-[29342:259:0311/165739.670730:INFO:CONSOLE(239)] "
-%cThis is a browser feature intended for developers. If someone told you to copy and paste something here to enable a Facebook feature or "hack" someone's account, it is a scam and will give them access to your Facebook account. font-family:helvetica; font-size:20px; ", source: https://static.xx.fbcdn.net/rsrc.php/v4/yf/r/DBxTAKKzYR5.js (239)
-[29342:259:0311/165739.670793:INFO:CONSOLE(239)] "
-%cSee https://www.facebook.com/selfxss for more information. font-family:helvetica; font-size:20px; ", source: https://static.xx.fbcdn.net/rsrc.php/v4/yf/r/DBxTAKKzYR5.js (239)
-[29342:259:0311/165739.670842:INFO:CONSOLE(239)] "
-%c ", source: https://static.xx.fbcdn.net/rsrc.php/v4/yf/r/DBxTAKKzYR5.js (239)
-[29349:259:0311/165739.671069:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
-[29342:259:0311/165824.918244:INFO:CONSOLE(239)] "
-%cStop! font-family:helvetica; font-size:20px; font-size:50px; font-weight:bold; color:red; -webkit-text-stroke:1px black;", source: https://static.xx.fbcdn.net/rsrc.php/v4/yf/r/DBxTAKKzYR5.js (239)
-[29342:259:0311/165824.918532:INFO:CONSOLE(239)] "
-%cThis is a browser feature intended for developers. If someone told you to copy and paste something here to enable a Facebook feature or "hack" someone's account, it is a scam and will give them access to your Facebook account. font-family:helvetica; font-size:20px; ", source: https://static.xx.fbcdn.net/rsrc.php/v4/yf/r/DBxTAKKzYR5.js (239)
-[29349:259:0311/165824.918509:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
-[29342:259:0311/165824.918561:INFO:CONSOLE(239)] "
-%cSee https://www.facebook.com/selfxss for more information. font-family:helvetica; font-size:20px; ", source: https://static.xx.fbcdn.net/rsrc.php/v4/yf/r/DBxTAKKzYR5.js (239)
-[29342:259:0311/165824.918602:INFO:CONSOLE(239)] "
-%c ", source: https://static.xx.fbcdn.net/rsrc.php/v4/yf/r/DBxTAKKzYR5.js (239)
-[29349:259:0311/165824.918925:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
-[29342:259:0311/165839.225826:INFO:CONSOLE(239)] "
-%cStop! font-family:helvetica; font-size:20px; font-size:50px; font-weight:bold; color:red; -webkit-text-stroke:1px black;", source: https://static.cdninstagram.com/rsrc.php/v4/yf/r/DBxTAKKzYR5.js (239)
-[29342:259:0311/165839.226042:INFO:CONSOLE(239)] "
-%cThis is a browser feature intended for developers. If someone told you to copy-paste something here to enable an Instagram feature or "hack" someone's account, it is a scam and will give them access to your Instagram account. font-family:helvetica; font-size:20px; ", source: https://static.cdninstagram.com/rsrc.php/v4/yf/r/DBxTAKKzYR5.js (239)
-[29342:259:0311/165839.226072:INFO:CONSOLE(239)] "
-%cSee https://www.facebook.com/selfxss for more information. font-family:helvetica; font-size:20px; ", source: https://static.cdninstagram.com/rsrc.php/v4/yf/r/DBxTAKKzYR5.js (239)
-[29342:259:0311/165839.226090:INFO:CONSOLE(239)] "
-%c ", source: https://static.cdninstagram.com/rsrc.php/v4/yf/r/DBxTAKKzYR5.js (239)
-[29349:259:0311/165839.246528:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
-[29349:259:0311/165839.246792:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
-[29349:259:0311/165839.251173:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
-[29349:259:0311/165839.251475:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
-[29342:259:0311/165839.255395:INFO:CONSOLE(0)] "Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner.", source: https://www.instagram.com/swade_32/ (0)
-[29342:259:0311/165841.006261:INFO:CONSOLE(71)] "ErrorUtils caught an error:
+Subsequent non-fatal errors won't be logged; see https://fburl.com/debugjs. [object Object]", source: https://static.cdninstagram.com/rsrc.php/v4/yp/r/z53K205ct98.js (70)
+[58000:259:0326/124908.758983:INFO:CONSOLE(234)] "Permissions policy violation: unload is not allowed in this document.", source: https://static.xx.fbcdn.net/rsrc.php/v4/yp/r/z53K205ct98.js (234)
+[58006:25603:0326/124914.917875:ERROR:shared_image_manager.cc(509)] SharedImageManager::ProduceMemory: Trying to Produce a Memory representation from a non-existent mailbox.
+[58000:259:0326/124917.496062:INFO:CONSOLE(238)] "
+%cStop! font-family:helvetica; font-size:20px; font-size:50px; font-weight:bold; color:red; -webkit-text-stroke:1px black;", source: https://static.xx.fbcdn.net/rsrc.php/v4/yp/r/z53K205ct98.js (238)
+[58000:259:0326/124917.496115:INFO:CONSOLE(238)] "
+%cThis is a browser feature intended for developers. If someone told you to copy and paste something here to enable a Facebook feature or "hack" someone's account, it is a scam and will give them access to your Facebook account. font-family:helvetica; font-size:20px; ", source: https://static.xx.fbcdn.net/rsrc.php/v4/yp/r/z53K205ct98.js (238)
+[58000:259:0326/124917.496129:INFO:CONSOLE(238)] "
+%cSee https://www.facebook.com/selfxss for more information. font-family:helvetica; font-size:20px; ", source: https://static.xx.fbcdn.net/rsrc.php/v4/yp/r/z53K205ct98.js (238)
+[58000:259:0326/124917.496139:INFO:CONSOLE(238)] "
+%c ", source: https://static.xx.fbcdn.net/rsrc.php/v4/yp/r/z53K205ct98.js (238)
+[58006:259:0326/124917.496378:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
+[58006:259:0326/124917.496681:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
+[58291:39171:0326/125042.339019:INFO:peer_connection_dependency_factory.cc(802)] Running WebRTC with a combined Network and Worker thread.
+[58000:259:0326/125042.554167:INFO:CONSOLE(0)] "Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner.", source: https://x.com/i/flow/login (0)
+[58291:39171:0326/125213.213167:INFO:peer_connection_dependency_factory.cc(802)] Running WebRTC with a combined Network and Worker thread.
+[58000:259:0326/125213.372395:INFO:CONSOLE(0)] "Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner.", source: https://x.com/ (0)
+[58291:38659:0326/125213.393095:WARNING:webrtc_voice_engine.cc(809)] Attempting to stop aecdump when no audio processing module is present
+[58000:259:0326/125246.831738:INFO:CONSOLE(0)] "[DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o", source: https://x.com/i/flow/login (0)
+[58291:39171:0326/125257.117602:INFO:peer_connection_dependency_factory.cc(802)] Running WebRTC with a combined Network and Worker thread.
+[58291:38659:0326/125327.093536:WARNING:webrtc_voice_engine.cc(809)] Attempting to stop aecdump when no audio processing module is present
+[58291:39171:0326/125331.413783:INFO:peer_connection_dependency_factory.cc(802)] Running WebRTC with a combined Network and Worker thread.
+[58000:259:0326/125340.231285:INFO:CONSOLE(0)] "[DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o", source: https://x.com/i/flow/login (0)
+[58291:39171:0326/125346.978794:INFO:peer_connection_dependency_factory.cc(802)] Running WebRTC with a combined Network and Worker thread.
+[58000:259:0326/125353.210114:INFO:CONSOLE(238)] "
+%cStop! font-family:helvetica; font-size:20px; font-size:50px; font-weight:bold; color:red; -webkit-text-stroke:1px black;", source: https://static.xx.fbcdn.net/rsrc.php/v4/yp/r/z53K205ct98.js (238)
+[58000:259:0326/125353.210283:INFO:CONSOLE(238)] "
+%cThis is a browser feature intended for developers. If someone told you to copy and paste something here to enable a Facebook feature or "hack" someone's account, it is a scam and will give them access to your Facebook account. font-family:helvetica; font-size:20px; ", source: https://static.xx.fbcdn.net/rsrc.php/v4/yp/r/z53K205ct98.js (238)
+[58000:259:0326/125353.210321:INFO:CONSOLE(238)] "
+%cSee https://www.facebook.com/selfxss for more information. font-family:helvetica; font-size:20px; ", source: https://static.xx.fbcdn.net/rsrc.php/v4/yp/r/z53K205ct98.js (238)
+[58000:259:0326/125353.210336:INFO:CONSOLE(238)] "
+%c ", source: https://static.xx.fbcdn.net/rsrc.php/v4/yp/r/z53K205ct98.js (238)
+[58006:259:0326/125353.210475:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
+[58006:259:0326/125353.210813:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
+[58291:38659:0326/125401.384852:WARNING:webrtc_voice_engine.cc(809)] Attempting to stop aecdump when no audio processing module is present
+[58291:38659:0326/125401.385244:WARNING:webrtc_voice_engine.cc(809)] Attempting to stop aecdump when no audio processing module is present
+[58291:38659:0326/125401.396076:WARNING:webrtc_voice_engine.cc(809)] Attempting to stop aecdump when no audio processing module is present
+[58000:259:0326/125518.873629:INFO:CONSOLE(238)] "
+%cStop! font-family:helvetica; font-size:20px; font-size:50px; font-weight:bold; color:red; -webkit-text-stroke:1px black;", source: https://static.xx.fbcdn.net/rsrc.php/v4/yp/r/z53K205ct98.js (238)
+[58000:259:0326/125518.873696:INFO:CONSOLE(238)] "
+%cThis is a browser feature intended for developers. If someone told you to copy and paste something here to enable a Facebook feature or "hack" someone's account, it is a scam and will give them access to your Facebook account. font-family:helvetica; font-size:20px; ", source: https://static.xx.fbcdn.net/rsrc.php/v4/yp/r/z53K205ct98.js (238)
+[58000:259:0326/125518.873724:INFO:CONSOLE(238)] "
+%cSee https://www.facebook.com/selfxss for more information. font-family:helvetica; font-size:20px; ", source: https://static.xx.fbcdn.net/rsrc.php/v4/yp/r/z53K205ct98.js (238)
+[58000:259:0326/125518.873736:INFO:CONSOLE(238)] "
+%c ", source: https://static.xx.fbcdn.net/rsrc.php/v4/yp/r/z53K205ct98.js (238)
+[58006:259:0326/125518.873925:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
+[58006:259:0326/125518.874230:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
+[58000:259:0326/125644.656533:INFO:CONSOLE(238)] "
+%cStop! font-family:helvetica; font-size:20px; font-size:50px; font-weight:bold; color:red; -webkit-text-stroke:1px black;", source: https://static.cdninstagram.com/rsrc.php/v4/yp/r/z53K205ct98.js (238)
+[58000:259:0326/125644.656731:INFO:CONSOLE(238)] "
+%cThis is a browser feature intended for developers. If someone told you to copy-paste something here to enable an Instagram feature or "hack" someone's account, it is a scam and will give them access to your Instagram account. font-family:helvetica; font-size:20px; ", source: https://static.cdninstagram.com/rsrc.php/v4/yp/r/z53K205ct98.js (238)
+[58000:259:0326/125644.656759:INFO:CONSOLE(238)] "
+%cSee https://www.facebook.com/selfxss for more information. font-family:helvetica; font-size:20px; ", source: https://static.cdninstagram.com/rsrc.php/v4/yp/r/z53K205ct98.js (238)
+[58000:259:0326/125644.656774:INFO:CONSOLE(238)] "
+%c ", source: https://static.cdninstagram.com/rsrc.php/v4/yp/r/z53K205ct98.js (238)
+[58006:259:0326/125644.657113:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
+[58006:259:0326/125644.657536:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
+[58000:259:0326/125645.326165:INFO:CONSOLE(0)] "Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner.", source: https://www.instagram.com/ (0)
+[58000:259:0326/125645.350850:INFO:CONSOLE(70)] "ErrorUtils caught an error:
 
-Got unexpected null or undefined
+DTSG response is not valid: {"__ar":1,"error":1357004,"errorSummary":"Sorry, something went wrong","errorDescription":"Please try closing and re-opening your browser window.","isNotCritical":1,"rid":"ARJjtiOLSxJ3sqcM78Uknx7","payload":null,"lid":"7486101390735407582"}' [Caught in: [MAWRotateDTSG] Error rotating DTSG: (Error)]
 
-Subsequent non-fatal errors won't be logged; see https://fburl.com/debugjs. [object Object]", source: https://static.cdninstagram.com/rsrc.php/v4/yf/r/DBxTAKKzYR5.js (71)
-[29342:259:0311/165846.963267:INFO:CONSOLE(0)] "[DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o", source: https://www.instagram.com/accounts/login/?source=logged_out_megaphone_signup (0)
-[29349:259:0311/165900.917887:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
-[29349:259:0311/165900.918530:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
-[29342:259:0311/165900.920157:INFO:CONSOLE(239)] "
-%cStop! font-family:helvetica; font-size:20px; font-size:50px; font-weight:bold; color:red; -webkit-text-stroke:1px black;", source: https://static.cdninstagram.com/rsrc.php/v4/yf/r/DBxTAKKzYR5.js (239)
-[29342:259:0311/165900.920205:INFO:CONSOLE(239)] "
-%cThis is a browser feature intended for developers. If someone told you to copy-paste something here to enable an Instagram feature or "hack" someone's account, it is a scam and will give them access to your Instagram account. font-family:helvetica; font-size:20px; ", source: https://static.cdninstagram.com/rsrc.php/v4/yf/r/DBxTAKKzYR5.js (239)
-[29342:259:0311/165900.920220:INFO:CONSOLE(239)] "
-%cSee https://www.facebook.com/selfxss for more information. font-family:helvetica; font-size:20px; ", source: https://static.cdninstagram.com/rsrc.php/v4/yf/r/DBxTAKKzYR5.js (239)
-[29342:259:0311/165900.920237:INFO:CONSOLE(239)] "
-%c ", source: https://static.cdninstagram.com/rsrc.php/v4/yf/r/DBxTAKKzYR5.js (239)
-[29349:259:0311/165900.920275:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
-[29349:259:0311/165900.920617:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
-[29342:259:0311/165900.960837:INFO:CONSOLE(0)] "Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner.", source: https://www.instagram.com/swade_32/ (0)
-[29342:259:0311/165902.763691:INFO:CONSOLE(71)] "ErrorUtils caught an error:
+Subsequent non-fatal errors won't be logged; see https://fburl.com/debugjs. [object Object]", source: https://static.cdninstagram.com/rsrc.php/v4/yp/r/z53K205ct98.js (70)
+[58000:259:0326/125648.761711:INFO:CONSOLE(234)] "Permissions policy violation: unload is not allowed in this document.", source: https://static.xx.fbcdn.net/rsrc.php/v4/yp/r/z53K205ct98.js (234)
+[58000:259:0326/125704.380167:INFO:CONSOLE(238)] "
+%cStop! font-family:helvetica; font-size:20px; font-size:50px; font-weight:bold; color:red; -webkit-text-stroke:1px black;", source: https://static.cdninstagram.com/rsrc.php/v4/yp/r/z53K205ct98.js (238)
+[58000:259:0326/125704.380395:INFO:CONSOLE(238)] "
+%cThis is a browser feature intended for developers. If someone told you to copy-paste something here to enable an Instagram feature or "hack" someone's account, it is a scam and will give them access to your Instagram account. font-family:helvetica; font-size:20px; ", source: https://static.cdninstagram.com/rsrc.php/v4/yp/r/z53K205ct98.js (238)
+[58000:259:0326/125704.380413:INFO:CONSOLE(238)] "
+%cSee https://www.facebook.com/selfxss for more information. font-family:helvetica; font-size:20px; ", source: https://static.cdninstagram.com/rsrc.php/v4/yp/r/z53K205ct98.js (238)
+[58000:259:0326/125704.380425:INFO:CONSOLE(238)] "
+%c ", source: https://static.cdninstagram.com/rsrc.php/v4/yp/r/z53K205ct98.js (238)
+[58006:259:0326/125704.380710:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
+[58006:259:0326/125704.381097:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
+[58000:259:0326/125704.492596:INFO:CONSOLE(0)] "Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner.", source: https://www.instagram.com/ (0)
+[58000:259:0326/125705.007915:INFO:CONSOLE(70)] "ErrorUtils caught an error:
 
-Got unexpected null or undefined
+DTSG response is not valid: {"__ar":1,"error":1357004,"errorSummary":"Sorry, something went wrong","errorDescription":"Please try closing and re-opening your browser window.","isNotCritical":1,"rid":"A8a1jnTwdB83t4FPIpOyeCE","payload":null,"lid":"7486101476212574712"}' [Caught in: [MAWRotateDTSG] Error rotating DTSG: (Error)]
 
-Subsequent non-fatal errors won't be logged; see https://fburl.com/debugjs. [object Object]", source: https://static.cdninstagram.com/rsrc.php/v4/yf/r/DBxTAKKzYR5.js (71)
-[29342:259:0311/165905.248623:INFO:CONSOLE(0)] "[DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o", source: https://www.instagram.com/accounts/login/?source=logged_out_megaphone_signup (0)
-[29342:259:0311/165923.099347:INFO:CONSOLE(239)] "
-%cStop! font-family:helvetica; font-size:20px; font-size:50px; font-weight:bold; color:red; -webkit-text-stroke:1px black;", source: https://static.cdninstagram.com/rsrc.php/v4/yf/r/DBxTAKKzYR5.js (239)
-[29349:259:0311/165923.099590:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
-[29342:259:0311/165923.100390:INFO:CONSOLE(239)] "
-%cThis is a browser feature intended for developers. If someone told you to copy-paste something here to enable an Instagram feature or "hack" someone's account, it is a scam and will give them access to your Instagram account. font-family:helvetica; font-size:20px; ", source: https://static.cdninstagram.com/rsrc.php/v4/yf/r/DBxTAKKzYR5.js (239)
-[29342:259:0311/165923.100420:INFO:CONSOLE(239)] "
-%cSee https://www.facebook.com/selfxss for more information. font-family:helvetica; font-size:20px; ", source: https://static.cdninstagram.com/rsrc.php/v4/yf/r/DBxTAKKzYR5.js (239)
-[29342:259:0311/165923.100436:INFO:CONSOLE(239)] "
-%c ", source: https://static.cdninstagram.com/rsrc.php/v4/yf/r/DBxTAKKzYR5.js (239)
-[29349:259:0311/165923.100745:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
-[29342:259:0311/165923.140292:INFO:CONSOLE(0)] "Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner.", source: https://www.instagram.com/swade_32/ (0)
-[29342:259:0311/165925.081932:INFO:CONSOLE(71)] "ErrorUtils caught an error:
+Subsequent non-fatal errors won't be logged; see https://fburl.com/debugjs. [object Object]", source: https://static.cdninstagram.com/rsrc.php/v4/yp/r/z53K205ct98.js (70)
+[58000:259:0326/125707.471366:INFO:CONSOLE(234)] "Permissions policy violation: unload is not allowed in this document.", source: https://static.xx.fbcdn.net/rsrc.php/v4/yp/r/z53K205ct98.js (234)
+[58006:25603:0326/125722.891092:ERROR:shared_image_manager.cc(509)] SharedImageManager::ProduceMemory: Trying to Produce a Memory representation from a non-existent mailbox.
+[58997:37387:0326/125723.073336:INFO:peer_connection_dependency_factory.cc(802)] Running WebRTC with a combined Network and Worker thread.
+[58000:259:0326/125743.359660:INFO:CONSOLE(238)] "
+%cStop! font-family:helvetica; font-size:20px; font-size:50px; font-weight:bold; color:red; -webkit-text-stroke:1px black;", source: https://static.xx.fbcdn.net/rsrc.php/v4/yp/r/z53K205ct98.js (238)
+[58000:259:0326/125743.359883:INFO:CONSOLE(238)] "
+%cThis is a browser feature intended for developers. If someone told you to copy and paste something here to enable a Facebook feature or "hack" someone's account, it is a scam and will give them access to your Facebook account. font-family:helvetica; font-size:20px; ", source: https://static.xx.fbcdn.net/rsrc.php/v4/yp/r/z53K205ct98.js (238)
+[58000:259:0326/125743.359927:INFO:CONSOLE(238)] "
+%cSee https://www.facebook.com/selfxss for more information. font-family:helvetica; font-size:20px; ", source: https://static.xx.fbcdn.net/rsrc.php/v4/yp/r/z53K205ct98.js (238)
+[58000:259:0326/125743.359939:INFO:CONSOLE(238)] "
+%c ", source: https://static.xx.fbcdn.net/rsrc.php/v4/yp/r/z53K205ct98.js (238)
+[58006:259:0326/125743.359983:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
+[58006:259:0326/125743.360277:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
+[58997:37127:0326/125753.050909:WARNING:webrtc_voice_engine.cc(809)] Attempting to stop aecdump when no audio processing module is present
+[58000:259:0326/125909.031771:INFO:CONSOLE(238)] "
+%cStop! font-family:helvetica; font-size:20px; font-size:50px; font-weight:bold; color:red; -webkit-text-stroke:1px black;", source: https://static.cdninstagram.com/rsrc.php/v4/yp/r/z53K205ct98.js (238)
+[58000:259:0326/125909.031850:INFO:CONSOLE(238)] "
+%cThis is a browser feature intended for developers. If someone told you to copy-paste something here to enable an Instagram feature or "hack" someone's account, it is a scam and will give them access to your Instagram account. font-family:helvetica; font-size:20px; ", source: https://static.cdninstagram.com/rsrc.php/v4/yp/r/z53K205ct98.js (238)
+[58000:259:0326/125909.031866:INFO:CONSOLE(238)] "
+%cSee https://www.facebook.com/selfxss for more information. font-family:helvetica; font-size:20px; ", source: https://static.cdninstagram.com/rsrc.php/v4/yp/r/z53K205ct98.js (238)
+[58000:259:0326/125909.031877:INFO:CONSOLE(238)] "
+%c ", source: https://static.cdninstagram.com/rsrc.php/v4/yp/r/z53K205ct98.js (238)
+[58006:259:0326/125909.032435:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
+[58006:259:0326/125909.032894:ERROR:gles2_command_buffer_stub.cc(270)] ContextResult::kFatalFailure: Failed to create context.
+[58000:259:0326/125909.652641:INFO:CONSOLE(0)] "Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner.", source: https://www.instagram.com/ (0)
+[58000:259:0326/125909.823080:INFO:CONSOLE(70)] "ErrorUtils caught an error:
 
-Got unexpected null or undefined
+DTSG response is not valid: {"__ar":1,"error":1357004,"errorSummary":"Sorry, something went wrong","errorDescription":"Please try closing and re-opening your browser window.","isNotCritical":1,"rid":"ArobNMHvLri0daOB_ywN0-2","payload":null,"lid":"7486102009313275842"}' [Caught in: [MAWRotateDTSG] Error rotating DTSG: (Error)]
 
-Subsequent non-fatal errors won't be logged; see https://fburl.com/debugjs. [object Object]", source: https://static.cdninstagram.com/rsrc.php/v4/yf/r/DBxTAKKzYR5.js (71)
-[29342:259:0311/165935.190704:INFO:CONSOLE(0)] "[DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o", source: https://www.instagram.com/accounts/login/?next=%2Fswade_32%2F&source=desktop_nav (0)
-[30397:44803:0311/165946.552597:INFO:peer_connection_dependency_factory.cc(802)] Running WebRTC with a combined Network and Worker thread.
-[29342:259:0311/165946.748261:INFO:CONSOLE(0)] "Access to fetch at 'https://analytics.twitter.com/measurement/personalization_id_sync?twid_cookie_exchange=u%253D1899496222215569408' from origin 'https://x.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves your needs, set the request's mode to 'no-cors' to fetch the resource with CORS disabled.", source: https://x.com/swadeFB (0)
-[37582:63747:0311/170654.898521:INFO:peer_connection_dependency_factory.cc(802)] Running WebRTC with a combined Network and Worker thread.
-[29342:259:0311/170655.136029:INFO:CONSOLE(0)] "Access to fetch at 'https://analytics.twitter.com/measurement/personalization_id_sync?twid_cookie_exchange=u%253D1899496222215569408' from origin 'https://x.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves your needs, set the request's mode to 'no-cors' to fetch the resource with CORS disabled.", source: https://x.com/DillonLee13 (0)
-[29342:259:0311/170655.152426:INFO:CONSOLE(1)] "Uncaught (in promise) Error: ApiError: https://api.x.com/1.1/account/settings.json HTTP-401 codes:[32]", source: https://abs.twimg.com/responsive-web/client-web/main.bb7184fa.js (1)
-[37582:63747:0311/170703.935583:INFO:peer_connection_dependency_factory.cc(802)] Running WebRTC with a combined Network and Worker thread.
-[29342:259:0311/170704.083669:INFO:CONSOLE(72)] "[GSI_LOGGER]: Your client application uses one of the Google One Tap prompt UI status methods that may stop functioning when FedCM becomes mandatory. Refer to the migration guide to update your code accordingly and opt-in to FedCM to test your changes. Learn more: https://developers.google.com/identity/gsi/web/guides/fedcm-migration?s=dc#display_moment and https://developers.google.com/identity/gsi/web/guides/fedcm-migration?s=dc#skipped_moment", source: https://accounts.google.com/gsi/client (72)
-[29342:259:0311/170704.085050:INFO:CONSOLE(276)] "The mode button/widget are renamed to active/passive respectively and will be deprecated soon.", source: https://accounts.google.com/gsi/client (276)
-[29342:259:0311/170704.085909:INFO:CONSOLE(276)] "The mode button/widget are renamed to active/passive respectively and will be deprecated soon.", source: https://accounts.google.com/gsi/client (276)
-[29342:259:0311/170704.092469:INFO:CONSOLE(0)] "Not signed in with the identity provider.", source: https://x.com/DillonLee13 (0)
-[29342:259:0311/170704.092593:INFO:CONSOLE(72)] "[GSI_LOGGER]: FedCM get() rejects with AbortError: signal is aborted without reason", source: https://accounts.google.com/gsi/client (72)
-[29342:259:0311/170704.092679:INFO:CONSOLE(0)] "Not signed in with the identity provider.", source: https://x.com/DillonLee13 (0)
-[29342:259:0311/170704.161252:INFO:CONSOLE(0)] "Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner.", source: https://x.com/DillonLee13 (0)
-[37582:63747:0311/170713.193280:INFO:peer_connection_dependency_factory.cc(802)] Running WebRTC with a combined Network and Worker thread.
-[29342:259:0311/170713.321523:INFO:CONSOLE(72)] "[GSI_LOGGER]: Your client application uses one of the Google One Tap prompt UI status methods that may stop functioning when FedCM becomes mandatory. Refer to the migration guide to update your code accordingly and opt-in to FedCM to test your changes. Learn more: https://developers.google.com/identity/gsi/web/guides/fedcm-migration?s=dc#display_moment and https://developers.google.com/identity/gsi/web/guides/fedcm-migration?s=dc#skipped_moment", source: https://accounts.google.com/gsi/client (72)
-[29342:259:0311/170713.321830:INFO:CONSOLE(276)] "The mode button/widget are renamed to active/passive respectively and will be deprecated soon.", source: https://accounts.google.com/gsi/client (276)
-[29342:259:0311/170713.349228:INFO:CONSOLE(0)] "Not signed in with the identity provider.", source: https://x.com/DillonLee13 (0)
-[29342:259:0311/170713.381858:INFO:CONSOLE(0)] "Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner.", source: https://x.com/DillonLee13 (0)
-[29342:259:0311/170715.134302:INFO:CONSOLE(72)] "[GSI_LOGGER]: FedCM get() rejects with NetworkError: Error retrieving a token.", source: https://accounts.google.com/gsi/client (72)
+Subsequent non-fatal errors won't be logged; see https://fburl.com/debugjs. [object Object]", source: https://static.cdninstagram.com/rsrc.php/v4/yp/r/z53K205ct98.js (70)
+[58000:259:0326/125912.987614:INFO:CONSOLE(234)] "Permissions policy violation: unload is not allowed in this document.", source: https://static.xx.fbcdn.net/rsrc.php/v4/yp/r/z53K205ct98.js (234)
+[58000:259:0326/125929.724982:INFO:CONSOLE(1)] "Listener added for a 'DOMNodeInserted' mutation event. Support for this event type has been removed, and this event will no longer be fired. See https://chromestatus.com/feature/5083947249172480 for more information.", source: https://www.bing.com/rp/eKvcHdnNwo1WcxoSioV4ztnfZk8.br.js (1)
+[58000:259:0326/125929.725245:INFO:CONSOLE(1)] "Listener added for a 'DOMNodeRemoved' mutation event. Support for this event type has been removed, and this event will no longer be fired. See https://chromestatus.com/feature/5083947249172480 for more information.", source: https://www.bing.com/rp/eKvcHdnNwo1WcxoSioV4ztnfZk8.br.js (1)
+[58000:259:0326/125930.037228:INFO:CONSOLE(0)] "An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.", source: https://www.bing.com/orgid/idtoken/conditional (0)
+[58000:259:0326/125933.134585:INFO:CONSOLE(1)] "Listener added for a 'DOMNodeInserted' mutation event. Support for this event type has been removed, and this event will no longer be fired. See https://chromestatus.com/feature/5083947249172480 for more information.", source: https://www.bing.com/rp/eKvcHdnNwo1WcxoSioV4ztnfZk8.br.js (1)
+[58000:259:0326/125933.134633:INFO:CONSOLE(1)] "Listener added for a 'DOMNodeRemoved' mutation event. Support for this event type has been removed, and this event will no longer be fired. See https://chromestatus.com/feature/5083947249172480 for more information.", source: https://www.bing.com/rp/eKvcHdnNwo1WcxoSioV4ztnfZk8.br.js (1)
+[58000:259:0326/125933.619526:INFO:CONSOLE(0)] "An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.", source: https://www.bing.com/orgid/idtoken/conditional (0)
+[58000:259:0326/125938.997680:INFO:CONSOLE(1)] "Listener added for a 'DOMNodeInserted' mutation event. Support for this event type has been removed, and this event will no longer be fired. See https://chromestatus.com/feature/5083947249172480 for more information.", source: https://www.bing.com/rp/eKvcHdnNwo1WcxoSioV4ztnfZk8.br.js (1)
+[58000:259:0326/125938.998054:INFO:CONSOLE(1)] "Listener added for a 'DOMNodeRemoved' mutation event. Support for this event type has been removed, and this event will no longer be fired. See https://chromestatus.com/feature/5083947249172480 for more information.", source: https://www.bing.com/rp/eKvcHdnNwo1WcxoSioV4ztnfZk8.br.js (1)
+[58000:259:0326/125939.545792:INFO:CONSOLE(0)] "An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.", source: https://www.bing.com/orgid/idtoken/conditional (0)
+[59306:27435:0326/125943.157366:INFO:peer_connection_dependency_factory.cc(802)] Running WebRTC with a combined Network and Worker thread.
+[58000:259:0326/130003.524030:INFO:CONSOLE(1)] "Listener added for a 'DOMNodeInserted' mutation event. Support for this event type has been removed, and this event will no longer be fired. See https://chromestatus.com/feature/5083947249172480 for more information.", source: https://www.bing.com/rp/eKvcHdnNwo1WcxoSioV4ztnfZk8.br.js (1)
+[58000:259:0326/130003.524242:INFO:CONSOLE(1)] "Listener added for a 'DOMNodeRemoved' mutation event. Support for this event type has been removed, and this event will no longer be fired. See https://chromestatus.com/feature/5083947249172480 for more information.", source: https://www.bing.com/rp/eKvcHdnNwo1WcxoSioV4ztnfZk8.br.js (1)
+[58000:259:0326/130004.359358:INFO:CONSOLE(0)] "An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.", source: https://www.bing.com/orgid/idtoken/conditional (0)
+[58000:259:0326/130005.283448:INFO:CONSOLE(1)] "Listener added for a 'DOMNodeInserted' mutation event. Support for this event type has been removed, and this event will no longer be fired. See https://chromestatus.com/feature/5083947249172480 for more information.", source: https://www.bing.com/rp/eKvcHdnNwo1WcxoSioV4ztnfZk8.br.js (1)
+[58000:259:0326/130005.283533:INFO:CONSOLE(1)] "Listener added for a 'DOMNodeRemoved' mutation event. Support for this event type has been removed, and this event will no longer be fired. See https://chromestatus.com/feature/5083947249172480 for more information.", source: https://www.bing.com/rp/eKvcHdnNwo1WcxoSioV4ztnfZk8.br.js (1)
+[58000:259:0326/130006.718830:INFO:CONSOLE(1)] "Listener added for a 'DOMNodeInserted' mutation event. Support for this event type has been removed, and this event will no longer be fired. See https://chromestatus.com/feature/5083947249172480 for more information.", source: https://www.bing.com/rp/eKvcHdnNwo1WcxoSioV4ztnfZk8.br.js (1)
+[58000:259:0326/130006.718870:INFO:CONSOLE(1)] "Listener added for a 'DOMNodeRemoved' mutation event. Support for this event type has been removed, and this event will no longer be fired. See https://chromestatus.com/feature/5083947249172480 for more information.", source: https://www.bing.com/rp/eKvcHdnNwo1WcxoSioV4ztnfZk8.br.js (1)
+[58000:259:0326/130007.501711:INFO:CONSOLE(1)] "Listener added for a 'DOMNodeInserted' mutation event. Support for this event type has been removed, and this event will no longer be fired. See https://chromestatus.com/feature/5083947249172480 for more information.", source: https://www.bing.com/rp/eKvcHdnNwo1WcxoSioV4ztnfZk8.br.js (1)
+[58000:259:0326/130007.501754:INFO:CONSOLE(1)] "Listener added for a 'DOMNodeRemoved' mutation event. Support for this event type has been removed, and this event will no longer be fired. See https://chromestatus.com/feature/5083947249172480 for more information.", source: https://www.bing.com/rp/eKvcHdnNwo1WcxoSioV4ztnfZk8.br.js (1)
+[58000:259:0326/130007.853719:INFO:CONSOLE(0)] "An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.", source: https://www.bing.com/orgid/idtoken/conditional (0)
+[58000:259:0326/130011.869441:INFO:CONSOLE(1)] "Listener added for a 'DOMNodeInserted' mutation event. Support for this event type has been removed, and this event will no longer be fired. See https://chromestatus.com/feature/5083947249172480 for more information.", source: https://www.bing.com/rp/eKvcHdnNwo1WcxoSioV4ztnfZk8.br.js (1)
+[58000:259:0326/130011.869541:INFO:CONSOLE(1)] "Listener added for a 'DOMNodeRemoved' mutation event. Support for this event type has been removed, and this event will no longer be fired. See https://chromestatus.com/feature/5083947249172480 for more information.", source: https://www.bing.com/rp/eKvcHdnNwo1WcxoSioV4ztnfZk8.br.js (1)
+[58000:259:0326/130012.374149:INFO:CONSOLE(0)] "An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.", source: https://www.bing.com/orgid/idtoken/conditional (0)
+[59306:39687:0326/130013.191659:WARNING:webrtc_voice_engine.cc(809)] Attempting to stop aecdump when no audio processing module is present
+[59437:45587:0326/130039.417037:INFO:peer_connection_dependency_factory.cc(802)] Running WebRTC with a combined Network and Worker thread.
+[58000:259:0326/130039.643233:INFO:CONSOLE(1)] "Uncaught (in promise) Error: ApiError: https://api.x.com/1.1/account/settings.json HTTP-401 codes:[32]", source: https://abs.twimg.com/responsive-web/client-web/main.4b8ece1a.js (1)
+[58000:259:0326/130039.804435:INFO:CONSOLE(1)] "Uncaught (in promise) Error: ApiError: https://api.x.com/graphql/MA6tGkMvoK-PQdjiy4AZFw/HomeTimeline HTTP-401 codes:[32]", source: https://abs.twimg.com/responsive-web/client-web/main.4b8ece1a.js (1)
+[58000:259:0326/130040.071143:INFO:CONSOLE(1)] "Uncaught (in promise) Error: ApiError: https://api.x.com/graphql/PFIxTk8owMoZgiMccP0r4g/getAltTextPromptPreference HTTP-401 codes:[32]", source: https://abs.twimg.com/responsive-web/client-web/main.4b8ece1a.js (1)
+[59437:33799:0326/130109.395314:WARNING:webrtc_voice_engine.cc(809)] Attempting to stop aecdump when no audio processing module is present
+[59528:41223:0326/130123.078176:INFO:peer_connection_dependency_factory.cc(802)] Running WebRTC with a combined Network and Worker thread.
+[58000:259:0326/130123.251932:INFO:CONSOLE(0)] "Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner.", source: https://x.com/ (0)
+[59615:36867:0326/130204.979136:INFO:peer_connection_dependency_factory.cc(802)] Running WebRTC with a combined Network and Worker thread.
+[58000:259:0326/130205.166338:INFO:CONSOLE(0)] "Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner.", source: https://x.com/ (0)
+[59749:38915:0326/130255.347613:INFO:peer_connection_dependency_factory.cc(802)] Running WebRTC with a combined Network and Worker thread.
+[58000:259:0326/130255.522387:INFO:CONSOLE(0)] "Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner.", source: https://x.com/ (0)
+[59857:38147:0326/130345.237752:INFO:peer_connection_dependency_factory.cc(802)] Running WebRTC with a combined Network and Worker thread.
+[58000:259:0326/130345.410464:INFO:CONSOLE(0)] "Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner.", source: https://x.com/ (0)
+[59952:38403:0326/130431.869283:INFO:peer_connection_dependency_factory.cc(802)] Running WebRTC with a combined Network and Worker thread.
+[58000:259:0326/130432.054715:INFO:CONSOLE(0)] "Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner.", source: https://x.com/ (0)
+[60080:38147:0326/130528.849927:INFO:peer_connection_dependency_factory.cc(802)] Running WebRTC with a combined Network and Worker thread.
+[58000:259:0326/130529.019550:INFO:CONSOLE(0)] "Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner.", source: https://x.com/ (0)
+[60165:33563:0326/130613.148118:INFO:peer_connection_dependency_factory.cc(802)] Running WebRTC with a combined Network and Worker thread.
+[58000:259:0326/130613.311895:INFO:CONSOLE(0)] "Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner.", source: https://x.com/ (0)
+[60250:37891:0326/130658.828982:INFO:peer_connection_dependency_factory.cc(802)] Running WebRTC with a combined Network and Worker thread.
+[58000:259:0326/130659.004263:INFO:CONSOLE(0)] "Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner.", source: https://x.com/ (0)
+[60344:65283:0326/130748.189240:INFO:peer_connection_dependency_factory.cc(802)] Running WebRTC with a combined Network and Worker thread.
+[58000:259:0326/130748.380282:INFO:CONSOLE(0)] "Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner.", source: https://x.com/ (0)
+[60432:43523:0326/130832.192095:INFO:peer_connection_dependency_factory.cc(802)] Running WebRTC with a combined Network and Worker thread.
+[58000:259:0326/130832.358476:INFO:CONSOLE(0)] "Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner.", source: https://x.com/ (0)
+[60520:37635:0326/130916.252262:INFO:peer_connection_dependency_factory.cc(802)] Running WebRTC with a combined Network and Worker thread.
+[58000:259:0326/130916.421897:INFO:CONSOLE(0)] "Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner.", source: https://x.com/ (0)
+[60605:33543:0326/131002.521687:INFO:peer_connection_dependency_factory.cc(802)] Running WebRTC with a combined Network and Worker thread.
+[58000:259:0326/131002.694196:INFO:CONSOLE(0)] "Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner.", source: https://x.com/ (0)
+[60701:38915:0326/131047.432367:INFO:peer_connection_dependency_factory.cc(802)] Running WebRTC with a combined Network and Worker thread.
+[58000:259:0326/131047.601869:INFO:CONSOLE(0)] "Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner.", source: https://x.com/ (0)
+[60806:38403:0326/131140.431420:INFO:peer_connection_dependency_factory.cc(802)] Running WebRTC with a combined Network and Worker thread.
+[58000:259:0326/131140.592772:INFO:CONSOLE(0)] "Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner.", source: https://x.com/ (0)
+[60903:43523:0326/131229.492397:INFO:peer_connection_dependency_factory.cc(802)] Running WebRTC with a combined Network and Worker thread.
+[58000:259:0326/131229.671274:INFO:CONSOLE(0)] "Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner.", source: https://x.com/ (0)
+[61017:25147:0326/131329.914110:INFO:peer_connection_dependency_factory.cc(802)] Running WebRTC with a combined Network and Worker thread.
+[58000:259:0326/131330.252302:INFO:CONSOLE(0)] "Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner.", source: https://x.com/ (0)
+[61151:39171:0326/131421.561378:INFO:peer_connection_dependency_factory.cc(802)] Running WebRTC with a combined Network and Worker thread.
+[58000:259:0326/131421.720641:INFO:CONSOLE(0)] "Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner.", source: https://x.com/ (0)
+[58007:12035:0326/131450.605692:WARNING:spdy_session.cc(2980)] Received HEADERS for invalid stream 37
